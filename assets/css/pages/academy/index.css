@@ -1,0 +1,7 @@
+/* site.wizoom.com.br/academy */
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/header.css';

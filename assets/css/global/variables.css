@@ -1,0 +1,28 @@
+/* Variables */
+
+:root {
+
+--cor-branco: #FFFFFF;
+--cor-preto: #000000;
+
+--cor-principal-1: #D49F11;
+--cor-principal-2: #BA8817;
+--cor-principal-3: #996F1A;
+
+--cor-cinza-1: #DCDEE2;
+--cor-cinza-2: #BFC1C4;
+--cor-cinza-3: #A1A4A8;
+--cor-cinza-4: #626266;
+--cor-cinza-5: #4B4B4C;
+--cor-cinza-6: #323233;
+--cor-cinza-7: #212123;
+
+--cor-vermelho: #EA3654;
+--cor-verde: #45C941;
+--cor-azul: #337de4;
+
+--fonte-regular: 'gt_walsheim_regular';
+--fonte-medium: 'gt_walsheim_medium';
+--fonte-bold: 'gt_walsheim_bold';
+
+}
