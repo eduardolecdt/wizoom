@@ -16,13 +16,13 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-color: #212123;
+  background-color: #121219;
 }
 
 body {
   margin: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #212123;
+  background-color: #121219;
 }
 
 body.bloquear {
@@ -30,8 +30,8 @@ body.bloquear {
 }
 
 ::selection {
-  color: #212123;
-  background-color: #D49F11;
+  color: #FFFFFF;
+  background-color: #D3AE13;
 }
 
 a {

@@ -1,25 +1,33 @@
 /* Fontes */
 
 @font-face {
-  font-family: 'gt_walsheim_regular';
+  font-family: 'poppinsBold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://static.wizoom.com.br/fonts/gt-walsheim-regular.woff') format('woff');
+  src: url('https://static.wizoom.com.br/site/fonts/poppinsBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'gt_walsheim_medium';
+  font-family: 'ccMonsterMasterMedium';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://static.wizoom.com.br/fonts/gt-walsheim-medium.woff') format('woff');
+  src: url('https://static.wizoom.com.br/site/fonts/ccMonsterMasterMedium.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'gt_walsheim_bold';
+  font-family: 'gorditaMedium';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://static.wizoom.com.br/fonts/gt-walsheim-bold.woff') format('woff');
+  src: url('https://static.wizoom.com.br/site/fonts/gorditaMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gorditaRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wizoom.com.br/site/fonts/gorditaRegular.woff') format('woff');
 }

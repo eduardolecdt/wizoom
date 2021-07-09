@@ -5,24 +5,25 @@
 --cor-branco: #FFFFFF;
 --cor-preto: #000000;
 
---cor-principal-1: #D49F11;
---cor-principal-2: #BA8817;
---cor-principal-3: #996F1A;
+--cor-principal: #D3AE13;
 
---cor-cinza-1: #DCDEE2;
---cor-cinza-2: #BFC1C4;
---cor-cinza-3: #A1A4A8;
---cor-cinza-4: #626266;
---cor-cinza-5: #4B4B4C;
---cor-cinza-6: #323233;
---cor-cinza-7: #212123;
+--cor-cinza-escuro-1: #121219;
+--cor-cinza-escuro-2: #1E1E28;
+--cor-cinza-escuro-3: #2C2C38;
 
---cor-vermelho: #EA3654;
---cor-verde: #45C941;
---cor-azul: #337de4;
+--cor-cinza-claro-1: #EFEFF9;
+--cor-cinza-claro-2: #E4E4ED;
+--cor-cinza-claro-3: #CCCCD6;
+--cor-cinza-claro-4: #9B9BAA;
 
---fonte-regular: 'gt_walsheim_regular';
---fonte-medium: 'gt_walsheim_medium';
---fonte-bold: 'gt_walsheim_bold';
+--cor-vermelho: #D82A3F;
+--cor-verde: #26C666;
+--cor-azul: #2EBAE5;
+--cor-roxo: #A044E2;
+
+--fonte-bold: 'poppinsBold';
+--fonte-estilo: 'ccMonsterMasterMedium';
+--fonte-regular: 'gorditaRegular';
+--fonte-medium: 'gorditaMedium';
 
 }
