@@ -17,12 +17,12 @@ footer .container-direitos {
   padding-left: 5rem;
 }
 
-footer #icone-wizoom {
+footer .icone-wizoom {
   width: 40px;
   margin-bottom: 1rem;
 }
 
-footer #direitos {
+footer .direitos {
   font-family: var(--fonte-medium);
   color: var(--cor-principal);
   padding-left: 1rem;
@@ -35,7 +35,7 @@ footer .container-redes-sociais {
   padding-right: 5rem;
 }
 
-footer #icones {
+footer .icones {
   width: 40px;
   margin-right: 1rem;
   cursor: pointer;
@@ -56,10 +56,10 @@ footer #icones {
     padding-top: 4rem;
     padding-left: 0;
   }
-  footer #direitos {
+  footer .direitos {
     font-size: 0.9rem;
   }
-  footer #icones {
+  footer .icones {
     width: 50px;
   }
   footer .container-redes-sociais {

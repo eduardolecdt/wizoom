@@ -35,7 +35,7 @@ header h4 {
   max-width: 600px;
 }
 
-header #p-txt1 {
+header .p-txt1 {
   color: var(--cor-branco);
   font-family: var(--fonte-medium);
   font-size: 14px;
@@ -43,19 +43,19 @@ header #p-txt1 {
   max-width: 500px;
 }
 
-header #txt-fonte-estilo {
+header .txt-fonte-estilo {
   color: var(--cor-principal);
   font-family: var(--fonte-estilo);
   font-size: 30px;
   padding: 1.5rem 0 1.5rem 0;
 }
 
-header #txt-3_bold {
+header .txt-3_bold {
   color: var(--cor-verde);
   font-family: var(--fonte-medium);
 }
 
-header #bold {
+header .bold {
   font-family: var(--fonte-medium);
   color: var(--cor-cinza-claro-3);
 }
@@ -92,7 +92,7 @@ header .imagem-form {
   max-width: 25%;
 }
 
-header #form-txt-amarelo {
+header .form-txt-amarelo {
   color: var(--cor-principal);
   font-family: var(--fonte-bold);
   font-size: 22px;
@@ -101,7 +101,7 @@ header #form-txt-amarelo {
   padding-left: 1rem;
 }
 
-header #form-txt-preto {
+header .form-txt-preto {
   color: var(--cor-preto);
   font-family: var(--fonte-medium);
   font-size: 12px;
@@ -133,11 +133,11 @@ header label {
   padding-bottom: 0.5rem;
 }
 
-header #asterisco {
+header .asterisco {
   color: var(--cor-vermelho);
 }
 
-header #button-viewport1 {
+header .button-viewport1 {
   background-color: var(--cor-verde);
   font-family: var(--fonte-estilo);
   font-size: 1.5rem;
@@ -171,7 +171,7 @@ header .img-depois {
   margin-left: 5rem;
 }
 
-header #antes-e-depois {
+header .antes-e-depois {
   width: 250px;
 }
 
@@ -190,11 +190,11 @@ header .img-antes-e-depois {
   header h4 { 
     font-size: 25px;
   }
-  header #p-txt1 {
+  header .p-txt1 {
     font-size: 10px;
 
   }
-  header #txt-fonte-estilo {
+  header .txt-fonte-estilo {
     font-size:25px;
   }
   header .viewport-1-txt {
@@ -229,16 +229,16 @@ header .img-antes-e-depois {
   header .viewPort-1-form {
     margin-bottom: none;
   }
-  header #antes-e-depois {
+  header .antes-e-depois {
     margin-bottom: 2rem;
   }
-  header #form-txt-amarelo {
+  header .form-txt-amarelo {
     font-size: 15px
   }
-  header #form-txt-preto {
+  header .form-txt-preto {
     font-size: 8px;
   }
-  header #button-viewport1 {
+  header .button-viewport1 {
     font-size: 1rem;
   }
 }
