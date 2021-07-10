@@ -10,10 +10,8 @@ section.sobre {
   justify-content: space-between;
   padding-top: 3rem;
   overflow: hidden;
-}
+  padding-left: 80px;
 
-section.sobre .info-curso {
-  padding: 0 80px;
 }
 
 section.sobre .sobre-o-curso {
@@ -30,13 +28,14 @@ section.sobre #info-p {
   font-family: var(--fonte-medium);
   color: var(--cor-cinza-claro-1);
   font-size: clamp(1.1rem, 5vw, 1.3rem);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 section.sobre .info-curso-botao {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 5rem;
+
 }
 
 section.sobre .container-foto-homem-viewport2 {
@@ -52,7 +51,6 @@ section.sobre .container-foto-homem-mobile{
 
 section.sobre #img-homem {
   padding-top: 80px ;
-  
   height: 1200px;
 }
 
@@ -76,6 +74,8 @@ section.sobre #button-viewport2 {
     flex-direction: column;
     justify-content: center;
     background-size: 250%;
+    padding-top: 1rem;
+    padding: 0 20px;
   }
   section.sobre #info-p {
     font-size: 1rem;
@@ -87,8 +87,15 @@ section.sobre #button-viewport2 {
     padding-top: 0.5rem;
     width: 500px;
   }
-  section.sobre .info-curso {
-    padding-left: 1rem ;
+
+  section.sobre .info-curso-botao {
+    padding-bottom: 3rem;
+    font-size: 14px;
+  }
+  section.sobre #button-viewport2{
+    font-size: 150%;
+    width: 100%;
+    padding: 1.5rem;
   }
   .container-foto-homem-viewport2 {
     display: none;
@@ -99,9 +106,8 @@ section.sobre #button-viewport2 {
     align-items: flex-end;
   }
   #img-homem-mobile{
-    width: 90%;
+    width: 60%;
     height: 100%;
-    margin: 0 2rem 0 2rem;
-
+    
   }
 }

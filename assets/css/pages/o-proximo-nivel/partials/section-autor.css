@@ -10,6 +10,8 @@ section.autor {
   padding-top: 5rem;
   padding-bottom: 5rem;
   overflow: hidden;
+  padding-left: 80px;
+
 }
 
 section.autor .conheca-seu-prof {
@@ -18,14 +20,13 @@ section.autor .conheca-seu-prof {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem;
   text-align: left;
 }
 
 section.autor #fonte-regular {
   font-family: var(--fonte-regular);
   color: var(--cor-cinza-claro-4);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 section.autor #fonte-estilo {
@@ -74,6 +75,8 @@ section.autor .info-curso-botao-viewport4-mobile{
   section.autor {
     flex-direction: column; 
     background-size: 250%;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   section.autor .conheca-seu-prof {
     width: 100%; 
@@ -88,12 +91,15 @@ section.autor .info-curso-botao-viewport4-mobile{
     margin-top: 2rem; 
     align-items: center;
   }
+  section.autor #button-viewport4{
+    width: 100%;
+  }
   section.autor .container-imgs {
     width: 100%;
   }
   section.autor #fonte-estilo {
     font-size: 2.5rem; 
-    line-height: 1;
+    line-height: 1.5;
   }
   section.autor #esquerda,section.autor  #direita {
     width: 200px;  

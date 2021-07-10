@@ -2,13 +2,15 @@
 
 section.historia {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
   background-size: 90%;
   box-sizing: border-box;
   display: flex;
   padding-top: 5rem;
   overflow: hidden;
+  padding-right: 80px;
+
 }
 
 section.historia .foto-homem-viewport3 {
@@ -17,9 +19,10 @@ section.historia .foto-homem-viewport3 {
 
 section.historia .container-txt-viewport3 {
   width: 700px;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+
 }
 
 section.historia .txt-viewport3 {
@@ -34,22 +37,27 @@ section.historia #txt-bold-amarelo {
   font-family: var(--fonte-bold);
   font-size: 28px;
   color: var(--cor-principal);
+  line-height: 1.5;
 }
 
 section.historia #txt-viewport3 {
   font-family: var(--fonte-bold);
   font-size: 28px;
   color: var(--cor-cinza-claro-1);
+  line-height: 1.5;
 }
+
 section.historia #txt-bold {
   font-family: var(--fonte-bold);
   color: var(--cor-cinza-claro-2);
+  line-height: 1.5;
 }
 
 section.historia p {
   color: var(--cor-cinza-claro-4);
   font-family: var(--fonte-regular);
   padding-top: 1rem;
+  line-height: 1.5;
 } 
 
 section.historia #txt-3_bold-verde{
@@ -108,10 +116,12 @@ section.historia .info-curso-botao-viewport4-mobile {
     flex-direction: column;
     background-size: 250%;
     padding-top: 2rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   section.historia .container-txt-viewport3 {
     width: 95%; 
-    padding: 0 2rem 0 1rem;
+    text-align: left;
   }
   section.historia p {
     color: var(--cor-cinza-claro-4);
@@ -127,14 +137,14 @@ section.historia .info-curso-botao-viewport4-mobile {
   }
   section.historia #txt-viewport3 {
     font-size: 24px;
-    line-height: 1.3;
+    line-height: 1.5;
   }
   section.historia #txt-3_bold-verde{
     color: var(--cor-verde);
     font-family: var(--fonte-medium);
   }
   section.historia #line-height{
-    line-height: 2;
+    line-height: 1.5;
   }
   section.historia #button-viewport3 {
     font-size: 1.2rem; 
@@ -155,6 +165,7 @@ section.historia .info-curso-botao-viewport4-mobile {
       align-items: center;
   }
   #img-homem-viewport3 {
-    width: 60%;
+    width: 80%;
+    height: 100%;
   }
 }

@@ -9,6 +9,7 @@ header {
   align-items: center;
   box-sizing: border-box;
   overflow: hidden;
+  padding: 0 80px;
 }
 
 header .viewport-1-txt {
@@ -34,9 +35,8 @@ header #p-txt1 {
   color: var(--cor-branco);
   font-family: var(--fonte-medium);
   font-size: 14px;
-  padding: 0 10px 0 10px ;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 header #txt-fonte-estilo {
@@ -60,13 +60,13 @@ header p {
   font-family: var(--fonte-regular);
   color: var(--cor-cinza-claro-3);
   font-size: 0.95rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 header .viewPort-1-form {
   background-color: var(--cor-branco);
   min-width: 300px;
-  width: 450px;
+  width: 100%;
   height: 450px;
   border-radius: 30px;
   display: flex;
@@ -181,26 +181,33 @@ header .img-antes-e-depois {
   header {
     background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
     background-size: 250%;
+    padding: 0 20px;
   }
   header h4 { 
     font-size: 25px;
   }
   header #p-txt1 {
     font-size: 10px;
+
   }
   header #txt-fonte-estilo {
     font-size:25px;
   }
   header .viewport-1-txt {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 20px;
   }
   header .form-imgs {
     display: flex; 
     flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
   }
   header .viewPort-1-form {
-    width: 320px; 
+    width: 90%;
     height: 400px;
+    margin: 0 20px 5rem 20px;
   }
   header .img-antes {
     display: none;
