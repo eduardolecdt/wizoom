@@ -40,14 +40,19 @@ section.sobre .info-curso-botao {
 }
 
 section.sobre .container-foto-homem-viewport2 {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
+section.sobre .container-foto-homem-mobile{
+  display: none;
+}
+
 section.sobre #img-homem {
   padding-top: 80px ;
+  
   height: 1200px;
 }
 
@@ -69,25 +74,34 @@ section.sobre #button-viewport2 {
 @media screen and (max-width: 1000px) {
   section.sobre {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-size: 250%;
   }
-  #info-p {
-    font-size: 0.8rem;
+  section.sobre #info-p {
+    font-size: 1rem;
   }
   #img-homem { 
-    width: 70%; 
-    height: 50%;
+   display: none;
   }
   #info-curso-img {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    width: 500px;
   }
-  .info-curso {
-    padding: 1rem;
+  section.sobre .info-curso {
+    padding-left: 1rem ;
   }
   .container-foto-homem-viewport2 {
-    width: 100%; 
+    display: none;
+  }
+  section.sobre .container-foto-homem-mobile{
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
+  }
+  #img-homem-mobile{
+    width: 90%;
+    height: 100%;
+    margin: 0 2rem 0 2rem;
+
   }
 }
