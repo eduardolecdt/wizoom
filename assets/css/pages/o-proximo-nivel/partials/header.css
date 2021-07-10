@@ -1,5 +1,9 @@
 /* <header> */
 
+body{
+  overflow-x: hidden;
+}
+
 header {
   margin: 0;
   background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
