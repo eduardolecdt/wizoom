@@ -21,6 +21,7 @@
 .viewport-1-txt{
     text-align: center;
     padding-top: 55px;
+    margin-bottom: 5rem;
 }
 
 h4{
@@ -132,7 +133,7 @@ label{
     color: var(--cor-vermelho);
 }
 
-button{
+#button-viewport1{
     background-color: var(--cor-verde);
     font-family: var(--fonte-estilo);
     font-size: 1.5rem;
@@ -146,8 +147,6 @@ button{
 }
 
 .form-imgs{
-    padding-top: 3rem;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
@@ -157,6 +156,7 @@ button{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-right: 5rem;
 }
 
 .img-depois{
@@ -164,10 +164,16 @@ button{
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 5rem;
+    margin-left: 5rem;
+
 }
 
 #antes-e-depois{
     width: 250px;
+}
+
+.img-antes-e-depois{
+    display: none;
 }
 
 /* VIEWPORT 2*/
@@ -222,12 +228,26 @@ button{
     padding-top: 2rem ;
     height: 1200px;
 }
+#button-viewport2{
+    background-color: var(--cor-verde);
+    font-family: var(--fonte-estilo);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 75%;
+    max-width: 100%;
+    cursor: pointer;
+}
 
 /* VIEWPORT 3 */
 
 .viewport-3{
     width: 100vw;
     height: 150vh;
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
+    background-size: 90%;
     display: flex;
     padding-top: 5rem;
 
@@ -276,6 +296,7 @@ button{
     color: var(--cor-principal);
 }
 
+.foto-homem-viewport3-mobile{display: none;}
 
 .foto-homem-viewport3{
     margin-right: 2rem;
@@ -286,11 +307,28 @@ button{
 }
 
 .info-curso-botao-viewport3{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 5rem;
 }   
+
+#button-viewport3{
+    width: 100px;
+    background-color: var(--cor-verde);
+    font-family: var(--fonte-estilo);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    margin-top: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 10px;
+    min-width: 75%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.info-curso-botao-viewport4-mobile{display: none;}
 
 
 /*   VIEWPORT 4 */
@@ -325,6 +363,18 @@ button{
     font-size: 3rem;
 }
 
+#button-viewport4{
+    width: 80%;
+    background-color: var(--cor-verde);
+    font-family: var(--fonte-estilo);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    padding:1.5rem;
+    border-radius: 10px;
+    min-width: 75%;
+    max-width: 100%;
+    cursor: pointer;
+}
 .container-imgs{
     width: 50%;
     display: flex;
@@ -332,6 +382,7 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 
 #esquerda{
     width: 250px;
@@ -378,4 +429,106 @@ button{
     width: 40px;
     margin-right: 1rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .viewport-1{
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
+    background-size: 250%;
+    }
+    h4{font-size: 25px;}
+    #p-txt1{font-size: 10px;}
+    #txt-fonte-estilo{font-size:25px;}
+    .viewport-1-txt{margin-bottom: 2rem;}
+
+    .form-imgs{
+      display: flex;
+      flex-direction: column;
+    }
+    .viewPort-1-form{width: 320px; height: 400px;}
+    .img-antes{display: none;}
+    .img-depois{display: none;}
+    .img-antes-e-depois{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 8rem;
+    }
+    .iewPort-1-form{margin-bottom: none;}
+    #antes-e-depois{margin-bottom: 2rem;}
+    #form-txt-amarelo{font-size: 15px}
+    #form-txt-preto{font-size: 8px;}
+    #button-viewport1{font-size: 1rem;}
+
+    .viewport-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 250%;
+        
+    }
+
+    .info-curso{padding: 1rem;}
+    #info-p{font-size: 0.8rem;}
+    #info-curso-img{padding-top: 1rem;}
+    .container-foto-homem-viewport2{
+        width: 100%;
+        justify-content: center;
+    }
+    #img-homem{
+        width: 70%;
+        height: 50%;
+    }
+
+    .viewport-3{flex-direction: column;  height: 240vh; padding-top: 2rem; background-size: 250%;}
+    .container-txt-viewport3{width: 95%; padding-left: 2rem;}
+    #txt-bold-amarelo{font-size: 24px;}
+    #txt-viewport3{font-size: 24px;}
+    .info-curso-botao-viewport3{align-items: none; width: 100%;}
+    .foto-homem-viewport3{display: none;}
+    .foto-homem-viewport3-mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #img-homem-viewport3{width: 60%;}
+
+    .viewport-4{flex-direction: column; background-size: 250%;}
+    .conheca-seu-prof{width: 100%; height: 75vh; padding-left: 2rem;}
+    #fonte-estilo{font-size: 2.5rem; line-height: 1;}
+    .info-curso-botao-viewport4{display: flex;justify-content: center; margin-top: 2rem;}
+    .container-imgs{width: 100%;}
+    #esquerda, #direita{width: 200px;  margin-top: 5rem;}
+    #esquerda{margin-right: 5rem;}
+    #direita{margin-left: 5rem;}
+
+
+    .rodape{
+        width: 100%;
+        height: 20rem;
+        flex-direction: column;
+        padding: none;
+    }
+
+    .container-direitos{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+        padding-left: 0;
+    }
+    #direitos{font-size: 0.9rem;}
+    #icones{width: 50px;}
+    .container-redes-sociais{
+        padding-right: 0;
+        padding-bottom: 4rem;
+        width: 100vw;
+        justify-content: center;
+    }
+
+
+
+
 }
