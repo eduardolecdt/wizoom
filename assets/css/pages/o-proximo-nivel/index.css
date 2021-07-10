@@ -5,3 +5,377 @@
 /* Partials */
 
 @import './partials/header.css';
+
+/* VIEWPORT1 DESKTOP*/
+
+.viewport-1{
+    margin: 0;
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
+    background-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.viewport-1-txt{
+    text-align: center;
+    padding-top: 55px;
+}
+
+h4{
+    color: var(--cor-branco);
+    font-family: var(--fonte-bold);
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+#p-txt1{
+    color: var(--cor-branco);
+    font-family: var(--fonte-medium);
+    font-size: 14px;
+    padding: 0 10px 0 10px ;
+}
+
+#txt-fonte-estilo{
+    color: var(--cor-principal);
+    font-family: var(--fonte-estilo);
+    font-size: 30px;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+#txt-3_bold{
+    color: var(--cor-verde);
+    font-family: var(--fonte-medium);
+}
+
+#bold{
+    font-family: var(--fonte-medium);
+    color: var(--cor-cinza-claro-3);
+}
+
+p{
+    font-family: var(--fonte-regular);
+    color: var(--cor-cinza-claro-3);
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+
+.viewPort-1-form{
+    background-color: var(--cor-branco);
+    min-width: 300px;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem ;
+    text-align: left;
+    margin-bottom: 8rem;
+}
+
+.container-img{
+    min-width: 75%;
+    max-width: 100%;    
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.imagem-form{
+    max-width: 25%;
+}
+
+#form-txt-amarelo{
+    color: var(--cor-principal);
+    font-family: var(--fonte-bold);
+    font-size: 22px;
+    max-width: 300px;
+    line-height: 1.5;
+    padding-left: 1rem;
+}
+
+#form-txt-preto{
+    color: var(--cor-preto);
+    font-family: var(--fonte-medium);
+    font-size: 12px;
+    padding-left: 1rem;
+}
+
+.container-inputs{
+    min-width: 75%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input{
+    width: 100%;
+    background-color: var(--cor-cinza-claro-1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+label{
+    color: var(--cor-preto);
+    font-family: var(--fonte-medium);
+    font-size: 10px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#asterisco{
+    color: var(--cor-vermelho);
+}
+
+button{
+    background-color: var(--cor-verde);
+    font-family: var(--fonte-estilo);
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 75%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.form-imgs{
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.img-antes{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.img-depois{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5rem;
+}
+
+#antes-e-depois{
+    width: 250px;
+}
+
+/* VIEWPORT 2*/
+
+.viewport-2{
+    width: 100vw;
+    background-color: var(--cor-cinza-escuro-2);
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-2.png');
+    background-size: 90%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.info-curso{
+    padding-left: 5rem;
+}
+
+.sobre-o-curso{
+    z-index: 1;
+
+}
+
+#info-curso-img{
+    width: 80px;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+#info-p{
+    font-family: var(--fonte-medium);
+    color: var(--cor-cinza-claro-1);
+    font-size: 1.3rem;
+}
+
+.info-curso-botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.container-foto-homem-viewport2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#img-homem{
+    padding-top: 2rem ;
+    height: 1200px;
+}
+
+/* VIEWPORT 3 */
+
+.viewport-3{
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    padding-top: 5rem;
+
+}
+
+.foto-homem-viewport3{
+    width: 40%;
+}
+
+.container-txt-viewport3{
+    width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.txt-viewport3{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+
+}
+
+#txt-bold-amarelo{
+    font-family: var(--fonte-bold);
+    font-size: 28px;
+    color: var(--cor-principal);
+}
+
+#txt-viewport3{
+    font-family: var(--fonte-bold);
+    font-size: 28px;
+    color: var(--cor-cinza-claro-1);
+}
+#txt-bold{
+    font-family: var(--fonte-bold);
+    color: var(--cor-cinza-claro-2);
+}
+
+#txt-amarelo-viewport3{
+    font-family: var(--fonte-medium);
+    color: var(--cor-principal);
+}
+
+
+.foto-homem-viewport3{
+    margin-right: 2rem;
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/widnei-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -120px;
+}
+
+.info-curso-botao-viewport3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}   
+
+
+/*   VIEWPORT 4 */
+
+.viewport-4{
+    width: 100vw;
+    background-color: var(--cor-cinza-escuro-2);
+    background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-2.png');
+    background-size: 90%;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.conheca-seu-prof{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+#fonte-regular{
+    font-family: var(--fonte-regular);
+    color: var(--cor-cinza-claro-4);
+}
+
+#fonte-estilo{
+    font-family: var(--fonte-estilo);
+    color: var(--cor-branco);
+    font-size: 3rem;
+}
+
+.container-imgs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#esquerda{
+    width: 250px;
+    margin-right: 10rem;
+}
+
+#direita{
+    width: 250px;
+    margin-left: 10rem;
+}
+
+.rodape{
+    background-color: var(--cor-cinza-escuro-1);
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-direitos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+#icone-wizoom{
+    width: 40px;
+}
+
+#direitos{
+    font-family: var(--fonte-medium);
+    color: var(--cor-principal);
+    padding-left: 1rem;
+}
+.container-redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+#icones{
+    width: 40px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
