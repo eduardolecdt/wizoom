@@ -1,0 +1,133 @@
+/* <section class="historia"> */
+
+section.historia {
+  width: 100vw;
+  height: 150vh;
+  background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-1.png');
+  background-size: 90%;
+  display: flex;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+section.historia .foto-homem-viewport3 {
+  width: 40%;
+}
+
+section.historia .container-txt-viewport3 {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.historia .txt-viewport3 {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+}
+
+section.historia #txt-bold-amarelo {
+  font-family: var(--fonte-bold);
+  font-size: 28px;
+  color: var(--cor-principal);
+}
+
+section.historia #txt-viewport3 {
+  font-family: var(--fonte-bold);
+  font-size: 28px;
+  color: var(--cor-cinza-claro-1);
+}
+section.historia #txt-bold {
+  font-family: var(--fonte-bold);
+  color: var(--cor-cinza-claro-2);
+}
+
+section.historia #txt-amarelo-viewport3 {
+  font-family: var(--fonte-medium);
+  color: var(--cor-principal);
+}
+
+section.historia .foto-homem-viewport3-mobile {
+  display: none;
+}
+
+section.historia .foto-homem-viewport3 {
+  margin-right: 2rem;
+  background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/widnei-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -120px;
+}
+
+section.historia .info-curso-botao-viewport3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}   
+
+section.historia #button-viewport3 {
+  width: 100px;
+  background-color: var(--cor-verde);
+  font-family: var(--fonte-estilo);
+  font-size: 1.5rem;
+  color: var(--cor-branco);
+  margin-top: 2rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10px;
+  min-width: 75%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+section.historia .info-curso-botao-viewport4-mobile {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  .viewport-3 {
+    flex-direction: column;  
+    height: 280vh; 
+    padding-top: 2rem; 
+    background-size: 250%;
+  }
+  .container-txt-viewport3 {
+    width: 95%; 
+    padding-left: 2rem;
+  }
+  #txt-bold-amarelo {
+    font-size: 24px; 
+  }
+  #txt-viewport3 {
+    font-size: 24px;
+  }
+  #button-viewport3 {
+    font-size: 1rem; 
+    width: 100%; 
+    padding: 1rem; 
+    font-size: 1.5rem;
+  }
+  .info-curso-botao-viewport3 {
+    align-items: none; 
+    width: 100%;
+  }
+  .foto-homem-viewport3 {
+    display: none;
+  }
+  .foto-homem-viewport3-mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  #img-homem-viewport3 {
+    width: 60%;
+  }
+}

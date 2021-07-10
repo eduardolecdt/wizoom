@@ -1,0 +1,93 @@
+/* <section class="sobre"> */
+
+section.sobre {
+  width: 100vw;
+  background-color: var(--cor-cinza-escuro-2);
+  background-image: url('https://static.wizoom.com.br/site/images/o-proximo-nivel/background-2.png');
+  background-size: 90%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+
+section.sobre .info-curso {
+  padding: 0 80px;
+}
+
+section.sobre .sobre-o-curso {
+  z-index: 1;
+}
+
+section.sobre #info-curso-img {
+  width: 80px;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+section.sobre #info-p {
+  font-family: var(--fonte-medium);
+  color: var(--cor-cinza-claro-1);
+  font-size: clamp(1.1rem, 5vw, 1.3rem);
+  line-height: 1.7;
+}
+
+section.sobre .info-curso-botao {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+section.sobre .container-foto-homem-viewport2 {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+section.sobre #img-homem {
+  padding-top: 80px ;
+  height: 1200px;
+}
+
+section.sobre #button-viewport2 {
+  background-color: var(--cor-verde);
+  font-family: var(--fonte-estilo);
+  font-size: 1.5rem;
+  color: var(--cor-branco);
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 75%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.sobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 250%;
+  }
+  #info-p {
+    font-size: 0.8rem;
+  }
+  #img-homem { 
+    width: 70%; 
+    height: 50%;
+  }
+  #info-curso-img {
+    padding-top: 1rem;
+  }
+  .info-curso {
+    padding: 1rem;
+  }
+  .container-foto-homem-viewport2 {
+    width: 100%; 
+    justify-content: center;
+  }
+}
