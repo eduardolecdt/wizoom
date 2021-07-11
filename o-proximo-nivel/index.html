@@ -64,7 +64,7 @@
       <p class='p-txt1'><b class="txt-3_bold">Participe gratuitamente</b> das melhores aulas sobre <b class="bold">Gestão estratégica, Marketing e Vendas</b> para você vencer o jogo e se destacar no mercado.</p>
     </div>
     <!-- Imagens e Form -->
-    <div class="form-imgs">
+    <div class="form-imgs" id="formulario">
       <!-- IMG Antes -->
       <div class="img-antes">
         <img class='antes-e-depois' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/antes-1.png" alt="foto do antes">
@@ -74,17 +74,36 @@
         <div class="container-img">
           <img class="imagem-form" src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-wizoom.svg"alt="logo do wizoon"/>
           <div class="txt-data">
-            <p class='form-txt-amarelo'>26, 27, 28 e 29 JULHO</p>
+            <p class='form-txt-amarelo'>26, 27, 28 e 29 de JULHO</p>
             <p class="form-txt-preto">Evento online e 100% gratuito</p>
           </div>
         </div>
-        <div class="container-inputs">
-          <label>Seu nome<span class="asterisco"> *</span></label>
-          <input placeholder="Digite seu nome">
-          <label>Seu email<span class='asterisco'> *</span></label>
-          <input placeholder="Digite seu melhor e-mail" />
-          <button class="button-viewport1">Quero participar das aulas</button>
-        </div>
+        <!-- Formulário -->
+        <form method="POST" action="https://widneiedu.activehosted.com/proc.php" id="_form_9_" novalidate>
+          <!-- Inputs Ocultos -->
+          <input type="hidden" name="u" value="9" />
+          <input type="hidden" name="f" value="9" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
+          <!-- Nome -->
+          <label>Seu Nome <b>*</b></label>
+          <div>
+            <input type="text" spellcheck="false" name="fullname" placeholder="Digite seu nome" required="true">
+          </div>
+          <!-- Email -->
+          <label>Seu Email <b>*</b></label>
+          <div>
+            <input type="text" spellcheck="false" name="email" placeholder="Digite seu melhor e-mail" required="true" autofocus="true">
+          </div>
+          <!-- Botão -->
+          <button id="_form_9_submit" class="_submit" type="submit">Quero os Segredos</button>
+          <!-- avisos -->
+          <div class="_clear-element">
+          </div>
+        </form>
       </div>
       <!-- IMG Depois -->
       <div class="img-depois"> 
@@ -120,7 +139,7 @@
         <p class="info-p">Ganhe mais clareza dos próximos passos que você deve seguir para atrair e fidelizar mais clientes, gerenciar melhor seu negócio, para você ter mais resultados lucrativos.</p>
       </div>
       <div class="info-curso-botao">
-        <button class='button-viewport2'>Quero participar das aulas</button>
+        <button data-scroll="#formulario" class='button-viewport2'>Quero participar das aulas</button>
       </div>
     </div>
     <!-- IMG Homem -->
@@ -130,7 +149,6 @@
     <!-- IMG Homem MOBILE -->
     <div class="container-foto-homem-mobile">
       <img class='img-homem-mobile' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/widnei-1.png" alt="foto de um homem com braço cruzado" />
-
     </div>
   </section>
 
@@ -142,19 +160,14 @@
     <div class="container-txt-viewport3">
       <div class="txt-viewport3">
         <p class="txt-viewport3-p"><b class='txt-bold-amarelo'>Porque tantos profissionais acima da média que são excelentes na prestação de serviços</b> ficam perdidos, travads ou com medo na hora de dar um passo para o próximo nível do seu negócio?</p>
-        </br>
         <p class="line-height">A resposta é simples, costumo falar que quando você pensa como operador você foca apenas na tarefa que
         é a entrega do serviço, <b class="txt-bold">quando você pensa como gestor você foca no cliente</b></p>
-        </br>
         <p class="line-height">Para levar sua estética automotiva a frente é preciso conhecer as <b class="txt-bold">etapas básicas que devem ser cumpridas</b> de forma estratégica desde o primeiro contato com o cliente</p>
-        </br>
         <p class="line-height">E por não pensar nesses detalhes que a maior parte dos iniciantes e até mesmo profissionais experientes <b class="txt-bold">se perdem e não têm resultados consistentes.</b></p>
-        </br>
         <p class="txt-amarelo-viewport3">Mas esse não é o seu caso!</p>
-      </br>
         <p class="line-height" >Ao participar do Evento <b class="txt-3_bold-verde">O Próximo Nível</b> você vai dominar o método exato para atrair +clientes, realizar +serviços e ter muito +lucros em seu negócio, e nós iremos juntos para o seu próximo nível!</p>
         <div class="info-curso-botao-viewport3">
-          <button class='button-viewport3'>Quero participar das aulas</button>
+          <button data-scroll="#formulario" class='button-viewport3'>Quero participar das aulas</button>
         </div>
       </div>
     </div>
@@ -173,12 +186,12 @@
       <p class="fonte-regular">Com a Wizoom Academy já impactou milhares de pessoas em seus treinamentos.</p>
       <p class="fonte-regular">Hoje conta com mais de 9mil alunos, é dono da maior Estética Automotiva da sua região e da Wizoom Loja, que fornece produtos e preços justos a alunos e clientes.</p>
       <div class="info-curso-botao-viewport4">
-        <button class='button-viewport4'>Quero participar das aulas</button>
+        <button data-scroll="#formulario" class='button-viewport4'>Quero participar das aulas</button>
       </div>
     </div>
     <!-- Botão Mobile -->
     <div class="info-curso-botao-viewport4-mobile">
-      <button class='button-viewport4'>Quero participar das aulas</button>
+      <button data-scroll="#formulario" class='button-viewport4'>Quero participar das aulas</button>
     </div>
     <!-- Imagens -->
     <div class="container-imgs">
@@ -196,14 +209,15 @@
     </div>
     <!-- Redes Sociais -->
     <div class="container-redes-sociais">
-      <img class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-instagram.svg" alt="icone do instagram">
-      <img class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-telegram.svg" alt="icone do telegram">
-      <img class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-youtube.svg" alt="icone do youtube">
+      <img data-url="https://instagram.com/widneiwizoom" class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-instagram.svg" alt="icone do instagram">
+      <img data-url="https://t.me/wizoom" class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-telegram.svg" alt="icone do telegram">
+      <img data-url="https://www.youtube.com/channel/UCEkCh_l8c6go8-VMHCUJVtQ" class='icones' src="https://static.wizoom.com.br/site/images/o-proximo-nivel/icone-youtube.svg" alt="icone do youtube">
     </div>
   </footer>
 
   <!-- JS -->
   <script src="../assets/js/global/global.js"></script>
+  <script src="../assets/js/pages/o-proximo-nivel/formulario.js"></script>
 
   <!-- Google Tag Manager -->
   <script>

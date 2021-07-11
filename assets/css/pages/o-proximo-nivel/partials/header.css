@@ -24,6 +24,7 @@ header .viewport-1-txt {
   text-align: center;
   padding-top: 55px;
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 header h4 {
@@ -41,6 +42,15 @@ header .p-txt1 {
   font-size: 14px;
   width: 100%;
   max-width: 500px;
+}
+
+header .p-txt2 {
+  color: var(--cor-branco);
+  font-family: var(--fonte-medium);
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px 0 0 0;
 }
 
 header .txt-fonte-estilo {
@@ -69,23 +79,56 @@ header p {
 
 header .viewPort-1-form {
   background-color: var(--cor-branco);
-  min-width: 300px;
+  max-width: 500px;
   width: 100%;
-  height: 450px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 2rem 0 2rem ;
   text-align: left;
   margin-bottom: 8rem;
+  padding: 40px;
+}
+
+header .viewPort-1-form h2 {
+  font-family: var(--fonte-bold);
+  color: var(--cor-cinza-escuro-4);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.5;
+  padding: 30px 0 0 0;
+}
+
+header .viewPort-1-form h3 {
+  font-family: var(--fonte-regular);
+  color: var(--cor-cinza-escuro-4);
+  font-size: clamp(0.9rem, 5vw, 1.1rem);
+  line-height: 1.5;
+  padding: 15px 0 0 0;
+}
+
+header .viewPort-1-form button.telegram {
+  background-color: var(--cor-azul);
+  font-family: var(--fonte-estilo);
+  font-size: 1.5rem;
+  color: var(--cor-branco);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px 0 0 0;
+}
+
+header .viewPort-1-form button.telegram:hover {
+  background-color: var(--cor-principal);
 }
 
 header .container-img {
-  min-width: 75%;
-  max-width: 100%;    
+  width: 100%;    
   display: flex;
   align-items: center;
-  padding-top: 2rem;
 }
 
 header .imagem-form {
@@ -108,52 +151,58 @@ header .form-txt-preto {
   padding-left: 1rem;
 }
 
-header .container-inputs {
-  min-width: 75%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-header input {
+header form input {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.9rem, 5vw, 1rem);
+  color: var(--cor-cinza-escuro-4);
   width: 100%;
   background-color: var(--cor-cinza-claro-1);
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 14px;
+  transition: all 0.3s;
+  margin: 5px 0 20px 0;
 }
 
-header label {
+header form input::placeholder {
+  opacity: 1;
+  color: var(--cor-cinza-escuro-4);
+}
+
+header form input:focus {
+  color: var(--cor-principal);
+}
+
+header form label {
   color: var(--cor-preto);
   font-family: var(--fonte-medium);
-  font-size: 10px;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 0.5rem;
+  font-size: clamp(0.7rem, 5vw, 0.9rem);
 }
 
-header .asterisco {
+header form label b {
   color: var(--cor-vermelho);
 }
 
-header .button-viewport1 {
+header form button {
   background-color: var(--cor-verde);
   font-family: var(--fonte-estilo);
   font-size: 1.5rem;
   color: var(--cor-branco);
-  margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 75%;
-  max-width: 100%;
+  width: 100%;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+header form button:hover {
+  background-color: var(--cor-principal);
 }
 
 header .form-imgs {
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
+  width: 100%;
 }
 
 header .img-antes {
@@ -187,15 +236,8 @@ header .img-antes-e-depois {
     background-size: 250%;
     padding: 0 20px;
   }
-  header h4 { 
-    font-size: 25px;
-  }
-  header .p-txt1 {
-    font-size: 10px;
-
-  }
   header .txt-fonte-estilo {
-    font-size:25px;
+    font-size: 25px;
   }
   header .viewport-1-txt {
     padding-bottom: 2rem;
@@ -205,13 +247,10 @@ header .img-antes-e-depois {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
-
   }
   header .viewPort-1-form {
-    width: 90%;
-    height: 400px;
     margin: 0 20px 5rem 20px;
+    padding: 30px;
   }
   header .img-antes {
     display: none;
@@ -231,12 +270,6 @@ header .img-antes-e-depois {
   }
   header .antes-e-depois {
     margin-bottom: 2rem;
-  }
-  header .form-txt-amarelo {
-    font-size: 15px
-  }
-  header .form-txt-preto {
-    font-size: 8px;
   }
   header .button-viewport1 {
     font-size: 1rem;

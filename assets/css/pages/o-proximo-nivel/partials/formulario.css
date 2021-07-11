@@ -1,0 +1,62 @@
+/* <form> */
+
+form {
+  width: 100%;
+  position: relative;
+  padding: 30px 0 20px 0;
+}
+
+form ._error {
+  display: block;
+  position: absolute;
+  font-size: 1.1rem;
+  z-index: 100;
+}
+
+form ._error._above {
+  top: 20px;
+  right: -10px;
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.3s;
+}
+
+form ._error._below {
+  top: 20px;
+  right: -10px;
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.3s;
+}
+
+form ._error._above ._error-arrow {
+  bottom: 0;
+  right: 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--cor-vermelho);
+}
+
+form ._error._below ._error-arrow {
+  top: 0;
+  right: 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--cor-vermelho);
+}
+
+form ._error-inner {
+  padding: 12px 15px;
+  background-color: var(--cor-vermelho);
+  font-size: 0.9rem;
+  font-family: var(--fonte-medium);
+  color: var(--cor-branco);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+form ._error-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}

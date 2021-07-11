@@ -56,7 +56,7 @@ section.historia .txt-bold {
 section.historia p {
   color: var(--cor-cinza-claro-4);
   font-family: var(--fonte-regular);
-  padding-top: 1rem;
+  padding-top: 20px;
   line-height: 1.5;
 } 
 
@@ -99,9 +99,14 @@ section.historia .button-viewport3 {
   margin-top: 2rem;
   padding: 1rem 0 1rem 0;
   border-radius: 10px;
-  min-width: 75%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+section.historia .button-viewport3:hover {
+  background-color: var(--cor-principal);
 }
 
 section.historia .info-curso-botao-viewport4-mobile {

@@ -63,9 +63,14 @@ section.sobre .button-viewport2 {
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  min-width: 75%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+section.sobre .button-viewport2:hover {
+  background-color: var(--cor-principal);
 }
 
 /* Responsivo */

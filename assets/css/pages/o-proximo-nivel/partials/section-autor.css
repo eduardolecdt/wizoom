@@ -42,9 +42,14 @@ section.autor .button-viewport4 {
   color: var(--cor-branco);
   padding:1.5rem;
   border-radius: 10px;
-  min-width: 75%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+section.autor .button-viewport4:hover {
+  background-color: var(--cor-principal);
 }
 
 section.autor .container-imgs {
@@ -65,7 +70,7 @@ section.autor .direita {
   margin-left: 10rem;
 }
 
-section.autor .info-curso-botao-viewport4-mobile{
+section.autor .info-curso-botao-viewport4-mobile {
   display: none;
 }
 

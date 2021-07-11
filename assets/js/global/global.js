@@ -81,6 +81,17 @@
     })
   }
 
+  function cliqueImagemExterna () {
+    window.addEventListener('click', (evento) => {
+      if (evento.target.nodeName !== 'IMG') return
+
+      const url = evento.target.getAttribute('data-url')
+      if (!url) return
+
+      paraPaginaExterna(url)
+    })
+  }
+
   function cliqueBotaoInterno () {
     window.addEventListener('click', (evento) => {
       if (evento.target.nodeName !== 'BUTTON') return
@@ -96,6 +107,7 @@
 
   cliqueBotaoExterno()
   cliqueBotaoInterno()
+  cliqueImagemExterna()
   habilitarCliqueRolarAteSeletor()
   desativarDragDrop()
   ativarLazyLoading()

@@ -4,6 +4,7 @@
 
 /* Partials */
 
+@import './partials/formulario.css';
 @import './partials/header.css';
 @import './partials/section-sobre.css';
 @import './partials/section-historia.css';
