@@ -28,7 +28,7 @@ section.sobre .info-p {
   font-family: var(--fonte-medium);
   color: var(--cor-cinza-claro-1);
   font-size: clamp(1.1rem, 5vw, 1.3rem);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 section.sobre .info-curso-botao {
@@ -57,7 +57,7 @@ section.sobre .img-homem {
 
 section.sobre .button-viewport2 {
   background-color: var(--cor-verde);
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-bold);
   font-size: 1.5rem;
   color: var(--cor-branco);
   margin-top: 2rem;

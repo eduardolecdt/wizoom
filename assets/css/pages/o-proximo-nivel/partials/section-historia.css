@@ -37,27 +37,27 @@ section.historia .txt-bold-amarelo {
   font-family: var(--fonte-bold);
   font-size: 28px;
   color: var(--cor-principal);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 section.historia .txt-viewport3-p {
   font-family: var(--fonte-bold);
   font-size: 28px;
   color: var(--cor-cinza-claro-1);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 section.historia .txt-bold {
   font-family: var(--fonte-bold);
   color: var(--cor-cinza-claro-2);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 section.historia p {
   color: var(--cor-cinza-claro-4);
   font-family: var(--fonte-regular);
   padding-top: 20px;
-  line-height: 1.5;
+  line-height: 1.7;
 } 
 
 section.historia .txt-3_bold-verde{
@@ -93,7 +93,7 @@ section.historia .info-curso-botao-viewport3 {
 section.historia .button-viewport3 {
   width: 100px;
   background-color: var(--cor-verde);
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-bold);
   font-size: 1.5rem;
   color: var(--cor-branco);
   margin-top: 2rem;
@@ -138,18 +138,18 @@ section.historia .info-curso-botao-viewport4-mobile {
   }
   .txt-bold-amarelo {
     font-size: 24px; 
-    line-height: 1.5;
+    line-height: 1.7;
   }
   section.historia .txt-viewport3-p {
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1.7;
   }
   section.historia .txt-3_bold-verde{
     color: var(--cor-verde);
     font-family: var(--fonte-medium);
   }
   section.historia .line-height{
-    line-height: 1.5;
+    line-height: 1.7;
   }
   section.historia .button-viewport3 {
     font-size: 1.2rem; 
@@ -160,17 +160,15 @@ section.historia .info-curso-botao-viewport4-mobile {
     align-items: none; 
     width: 100%;
   }
-  .foto-homem-viewport3 {
-    display: none;
-  }
   section.historia .foto-homem-viewport3-mobile {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .img-homem-viewport3 {
-    width: 0%;
+    width: 100%;
+    max-width: 300px;
     height: 100%;
   }
 }

@@ -31,7 +31,7 @@ header h4 {
   color: var(--cor-branco);
   font-family: var(--fonte-bold);
   font-size: clamp(1.2rem, 5vw, 1.6rem);
-  line-height: 1.5;
+  line-height: 1.7;
   width: 100%;
   max-width: 600px;
 }
@@ -55,7 +55,7 @@ header .p-txt2 {
 
 header .txt-fonte-estilo {
   color: var(--cor-principal);
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-bold);
   font-size: 30px;
   padding: 1.5rem 0 1.5rem 0;
 }
@@ -74,7 +74,7 @@ header p {
   font-family: var(--fonte-regular);
   color: var(--cor-cinza-claro-3);
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 header .viewPort-1-form {
@@ -96,7 +96,7 @@ header .viewPort-1-form h2 {
   font-family: var(--fonte-bold);
   color: var(--cor-cinza-escuro-4);
   font-size: clamp(1rem, 5vw, 1.2rem);
-  line-height: 1.5;
+  line-height: 1.7;
   padding: 30px 0 0 0;
 }
 
@@ -104,13 +104,13 @@ header .viewPort-1-form h3 {
   font-family: var(--fonte-regular);
   color: var(--cor-cinza-escuro-4);
   font-size: clamp(0.9rem, 5vw, 1.1rem);
-  line-height: 1.5;
+  line-height: 1.7;
   padding: 15px 0 0 0;
 }
 
 header .viewPort-1-form button.telegram {
   background-color: var(--cor-azul);
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-bold);
   font-size: 1.5rem;
   color: var(--cor-branco);
   padding: 1rem;
@@ -140,7 +140,7 @@ header .form-txt-amarelo {
   font-family: var(--fonte-bold);
   font-size: 22px;
   max-width: 300px;
-  line-height: 1.5;
+  line-height: 1.7;
   padding-left: 1rem;
 }
 
@@ -184,7 +184,7 @@ header form label b {
 
 header form button {
   background-color: var(--cor-verde);
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-bold);
   font-size: 1.5rem;
   color: var(--cor-branco);
   padding: 1rem;
@@ -221,7 +221,8 @@ header .img-depois {
 }
 
 header .antes-e-depois {
-  width: 250px;
+  width: 100%;
+  max-width: 350px;
 }
 
 header .img-antes-e-depois {
@@ -259,11 +260,7 @@ header .img-antes-e-depois {
     display: none;
   }
   header .img-antes-e-depois {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 8rem;
+    display: none;
   }
   header .viewPort-1-form {
     margin-bottom: none;
