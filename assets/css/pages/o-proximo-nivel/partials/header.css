@@ -56,7 +56,7 @@ header .p-txt2 {
 header .txt-fonte-estilo {
   color: var(--cor-principal);
   font-family: var(--fonte-bold);
-  font-size: 30px;
+  font-size: 25px;
   padding: 1.5rem 0 1.5rem 0;
 }
 
@@ -238,7 +238,7 @@ header .img-antes-e-depois {
     padding: 0 20px;
   }
   header .txt-fonte-estilo {
-    font-size: 25px;
+    font-size: 17px;
   }
   header .viewport-1-txt {
     padding-bottom: 2rem;
