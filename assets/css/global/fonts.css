@@ -31,3 +31,27 @@
   font-display: swap;
   src: url('https://static.wizoom.com.br/site/fonts/gorditaRegular.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'gtWalsheimRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wizoom.com.br/site/fonts/gt-walsheim-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gtWalsheimMedium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wizoom.com.br/site/fonts/gt-walsheim-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gtWalsheimBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.wizoom.com.br/site/fonts/gt-walsheim-bold.woff') format('woff');
+}

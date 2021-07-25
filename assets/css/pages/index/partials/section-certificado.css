@@ -1,0 +1,11 @@
+/* <section class="certificado"> */
+
+section.certificado {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  
+}

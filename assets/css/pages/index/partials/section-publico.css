@@ -1,0 +1,11 @@
+/* <section class="publico"> */
+
+section.publico {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  
+}

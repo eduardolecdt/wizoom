@@ -4,4 +4,15 @@
 
 /* Partials */
 
-@import './partials/header.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-assinar.css';
+@import './partials/section-autor.css';
+@import './partials/section-certificado.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-cta.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-duvidas.css';
+@import './partials/section-garantia.css';
+@import './partials/section-presentes.css';
+@import './partials/section-publico.css';
+@import './partials/section-valor.css';

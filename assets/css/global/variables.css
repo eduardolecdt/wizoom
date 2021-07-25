@@ -16,6 +16,8 @@
 --cor-cinza-claro-3: #CCCCD6;
 --cor-cinza-claro-4: #9B9BAA;
 
+--cor-branco-transparente: rgba(255, 255, 255, 0.05);
+
 --cor-vermelho: #D82A3F;
 --cor-verde: #26C666;
 --cor-azul: #2EBAE5;
@@ -25,5 +27,9 @@
 --fonte-estilo: 'ccMonsterMasterMedium';
 --fonte-regular: 'gorditaRegular';
 --fonte-medium: 'gorditaMedium';
+
+--fonte-gt-regular: 'gtWalsheimRegular';
+--fonte-gt-medium: 'gtWalsheimRegular';
+--fonte-gt-bold: 'gtWalsheimRegular';
 
 }
