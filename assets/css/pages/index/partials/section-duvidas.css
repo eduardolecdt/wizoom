@@ -38,6 +38,9 @@ section.duvidas .duvida {
 section.duvidas img {
   width: 70px;
 }
+section.duvidas .texto-negrito{
+  font-family: var(--fonte-bold);
+}
 
 section.duvidas .titulo-duvida{
   font-size: clamp(1em, 0.2em + 2vw, 1.2em);

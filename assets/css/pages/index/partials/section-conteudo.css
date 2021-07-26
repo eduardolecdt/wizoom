@@ -22,6 +22,17 @@ section.conteudo .explicacoes{
   width: 100%;
 }
 
+section.conteudo .texto-cor-principal-destaque{
+  color: var(--cor-principal);
+  font-size: clamp(1em, 1em + 3vw, 2.5em);
+}
+
+section.conteudo .texto-negrito{
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.5em, 0.5em + 2vw, 1em);
+
+}
+
 section.conteudo .container-explicacao{
   width: 100%;
   background-color: var(--cor-branco-transparente);
