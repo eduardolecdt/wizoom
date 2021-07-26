@@ -1,11 +1,109 @@
 /* <section class="publico"> */
 
 section.publico {
-  display: none;
+  width: 100vw;
+  height: 150vh;
+  padding-top: 4rem;
+  box-sizing: content-box;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  background-color: var(--cor-branco-transparente);
 }
+
+section.publico .titulo{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1.8em, 0.2em + 3vw, 2.5em);
+  padding: 0 80px;
+  z-index: 1;
+}
+
+section.publico .container-textos{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left:80px;
+  padding-top: 2rem;
+  z-index: 1;
+}
+
+section.publico .container-texto{
+  display: flex;
+}
+
+section.publico .numero{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1.5em, 0.2em + 3vw, 2em);
+  padding-right: 1rem;
+}
+
+section.publico .paragrafo{
+  margin-bottom: 2rem;
+}
+
+section.publico .texto-cor-principal{
+  color: var(--cor-principal);
+}
+
+section.publico .texto-chamativo{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1em, 0.2em + 3vw, 1.7em);
+  padding: 0 80px;
+  padding-top: 2rem;
+}
+
+section.publico .container{
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-image: url('https://static.wizoom.com.br/site/images/index/widnei-1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+    
+  section.publico {
+    padding-top:2rem;
+    background-size: 280%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  } 
+  section.publico .titulo{
+  padding: 0 25px;
+  }
+  section.publico .container-textos{
+    width: 100%;
+    padding: 0 25px;
+    padding-top: 1rem;
+  }
+  section.publico .texto-chamativo{
+    width: 100%;
+    text-align: center;
+  }
   
+  section.publico .container{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: none;
+  }
+  section.publico .container-mobile{
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://static.wizoom.com.br/site/images/index/widnei-1.png');
+    background-repeat: no-repeat;
+   background-position: right bottom;
+    background-size: contain;
+    margin-top: 4rem;
+  } 
+
 }

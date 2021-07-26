@@ -16,3 +16,5 @@
 @import './partials/section-presentes.css';
 @import './partials/section-publico.css';
 @import './partials/section-valor.css';
+
+*{ overflow-x: hidden; }

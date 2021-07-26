@@ -1,11 +1,104 @@
 /* <section class="autor"> */
 
+
 section.autor {
-  display: none;
+  width: 100vw;
+  height: auto;
+  box-sizing: content-box;
+  padding-bottom: 4rem;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  position: relative;
 }
+
+section.autor .container-imagens {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+}
+
+section.autor .container-textos {
+  width: 100vw;
+  text-align: center;
+  padding: 0 80px 0 80px;
+}
+
+section.autor .logo-maior {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5rem;
+}
+
+section.autor .homem {
+  width: 300px;
+  min-width: 300px;
+
+  bottom: 0;
+  position: absolute;
+}
+
+section.autor .logo-menor {
+  width: 60px;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  margin-right: 5rem;
+}
+
+
+section.autor .texto-titulo{
+  font-size: clamp(1em, 1em + 3vw, 2.4em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+section.autor .texto{
+  font-size: clamp(0.5em, 0.5em + 2vw, 1.2em);
+  line-height: 1.5;
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
+}
+
 
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.autor .container-textos{
+      padding: 0 25px 25px;
+  }
+
+  section.autor .container-imagens {
+      padding: 0 25px;
+  }
+
+  section.autor .logo-maior {
+      display: none;
+  }
+  
+  section.autor .homem {
+      width: 300px;
+      bottom: 0;
+      position: absolute;
+  }
+  
+  section.autor .logo-menor {
+ display: none;
+  }
+
+
+section.autor .container-textos {
+  text-align: left;
+}
   
 }
+
+
+
+

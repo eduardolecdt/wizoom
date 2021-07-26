@@ -1,11 +1,90 @@
 /* <section class="valor"> */
 
-section.valor {
-  display: none;
+section.valor{
+  padding: 4rem 80px;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+}
+
+section.valor .texto{
+  width: 100%;
+  text-align: center;
+}
+
+section.valor .titulo{
+  font-size: clamp(1em, 0.5em + 3vw, 3.5em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  padding-bottom: 2rem;
+}
+
+section.valor, .paragrafo, .paragrafo-negrito, .paragrafo-cor-principal{
+  font-size: clamp(0.2  em, 0.2em + 3vw, 1em);
+  line-height: 1.5;
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
+  padding-bottom: 2rem;
+}
+
+section.valor .paragrafo-negrito{
+  font-family: var(--fonte-bold);
+}
+
+
+section.valor .paragrafo-cor-principal{
+  color: var(--cor-principal);
+  font-family: var(--fonte-bold);
+}
+
+section.valor .caixa{
+  width: 100%;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+section.valor .texto-vermelho{
+  color: var(--cor-vermelho);
+  font-family: var(--fonte-bold);
+  text-decoration: line-through;
+}
+section.valor .texto-verde{
+  color: var(--cor-verde);
+  font-family: var(--fonte-bold);
+}
+
+section.valor .paragrafo-caixa{
+  font-size: clamp(1em, 0.5em + 3vw, 1.5em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+
+
+section.valor{
+  padding: 2rem 25px;
+}
+
+section.valor .paragrafo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+section.valor .caixa{
+  padding: 1rem;
+  }
+
 }
