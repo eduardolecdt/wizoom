@@ -12,7 +12,7 @@ section.valor .texto{
 }
 
 section.valor .titulo{
-  font-size: clamp(1em, 0.5em + 3vw, 3.5em);
+  font-size: clamp(1.5em, 0.5em + 3vw, 3.5em);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
@@ -20,7 +20,7 @@ section.valor .titulo{
 }
 
 section.valor, .paragrafo, .paragrafo-negrito, .paragrafo-cor-principal{
-  font-size: clamp(0.2  em, 0.2em + 3vw, 1em);
+  font-size: clamp(0.2em, 0.2em + 3vw, 1.05em);
   line-height: 1.5;
   font-family: var(--fonte-regular);
   color: var(--cor-branco);
@@ -29,18 +29,19 @@ section.valor, .paragrafo, .paragrafo-negrito, .paragrafo-cor-principal{
 
 section.valor .paragrafo-negrito{
   font-family: var(--fonte-bold);
+  font-size: clamp(0.2em, 0.2em + 3vw, 1.05em);
 }
-
 
 section.valor .paragrafo-cor-principal{
   color: var(--cor-principal);
   font-family: var(--fonte-bold);
+  font-size: clamp(0.2em, 0.2em + 3vw, 1.2em);
 }
 
 section.valor .caixa{
   width: 100%;
   height: 10rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--cor-branco-transparente);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -59,7 +60,7 @@ section.valor .texto-verde{
 }
 
 section.valor .paragrafo-caixa{
-  font-size: clamp(1em, 0.5em + 3vw, 1.5em);
+  font-size: clamp(1em, 0.5em + 3vw, 1.7em);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);

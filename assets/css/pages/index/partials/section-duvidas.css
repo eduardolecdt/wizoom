@@ -71,6 +71,10 @@ section.duvidas .logo{
 
 /* Responsivo */
 @media screen and (max-width: 1000px) {
+  section.duvidas{
+    background-size: 280%;
+  }
+  
   section.duvidas .titulo{
       padding: 0 25px;
       padding-bottom: 3rem;
@@ -92,10 +96,15 @@ section.duvidas .logo{
   section.duvidas .texto{
       padding-left: 1rem;
       padding-bottom: 3rem;
+      line-height: 3;
+  }
+
+  section.duvidas .paragrafo-duvida{
+    line-height: 3;
   }
       
   section.duvidas .logo{
-      width: 40px;
+      width: 60px;
   }
 
 }

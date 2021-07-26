@@ -69,6 +69,11 @@ section.garantia .texto{
 
 /* Responsivo */
 @media screen and (max-width: 1000px) {
+  section.garantia {
+    padding-bottom: 2rem;
+    background-size: 280%;
+  }
+
   section.garantia .container-textos{
       padding: 0 25px;
   }
@@ -85,6 +90,11 @@ section.garantia .texto{
   section.garantia .logo-menor {
       display: none;
   }
+
+
+section.garantia .texto{
+  line-height: 3;
+}
 }
 
 

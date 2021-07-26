@@ -35,7 +35,7 @@ section.publico .numero{
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
   font-size: clamp(1.5em, 0.2em + 3vw, 2em);
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 section.publico .paragrafo{
@@ -80,6 +80,11 @@ section.publico .container{
   section.publico .titulo{
   padding: 0 25px;
   }
+
+  section.publico .paragrafo{
+    line-height: 2.5;
+  }
+
   section.publico .container-textos{
     width: 100%;
     padding: 0 25px;

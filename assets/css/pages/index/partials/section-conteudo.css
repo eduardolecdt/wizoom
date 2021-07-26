@@ -3,8 +3,8 @@
 section.conteudo {
   width: 100vw;
   height: auto;
-  box-sizing: content-box;
-  padding: 4rem 0;
+  box-sizing: border-box;
+  padding: 4rem 80px;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
 }
@@ -63,10 +63,39 @@ section.conteudo .container-explicacao{
   font-family: var(--fonte-regular);
 }
 
+section.conteudo .botao-desktop{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+section.conteudo .botao-mobile{
+  display: none;
+}
+
+section.conteudo button{
+  width: 50%;
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  font-size: clamp(1em, 1em + 3vw, 1.2em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
 /* Responsivo */
 @media screen and (max-width: 1000px) {
   section.conteudo {
     background-size: 280%;
+    padding: 4rem 25px;
+
   }
 
   section.conteudo .titulo{
@@ -76,6 +105,33 @@ section.conteudo .container-explicacao{
   section.conteudo .explicacoes{
       padding: 0 25px;
   }
+
+  section.conteudo .botao-desktop{
+   display: none;
+  }
+
+section.conteudo .botao-mobile{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+section.conteudo button{
+  width: 80%;
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  font-size: clamp(1em, 1em + 3vw, 1.2em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 }
 
 
