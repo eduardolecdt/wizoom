@@ -1,31 +1,196 @@
 /* <section class="assinar"> */
 
 section.assinar {
-  
+    width: 100vw;
+  height: auto;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-direction: column;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  background-color: var(--cor-branco-transparente);
+
 }
 
-section.assinar {}
+section.assinar .container-titulo{
+    text-align: center;
+    padding: 0 80px;
+}
 
-section.assinar {}
+section.assinar .titulo{
+    font-size: clamp(1em, 1em + 3vw, 2.2em);
+    line-height: 1.5;
+    font-family: var(--fonte-bold);
+    color: var(--cor-branco);
+    padding-bottom: 1rem;
+}
 
-section.assinar {}
+section.assinar .texto-cor-principal{
+    color: var(--cor-principal);
+}
 
-section.assinar {}
+section.assinar .container-escolhas{
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    padding-top: 2rem;
+}
 
-section.assinar {}
+section.assinar .completo{
+    width: calc((0.6)* 100%);
+    min-width: 350px;
+    background-color: var(--cor-cinza-escuro-3);
+    min-width: 250px;
+    border-radius: 16px;
+    margin-right:1rem;
+    padding: 2rem;
+}
 
-section.assinar {}
+section.assinar .incompleto{
+  width: calc((0.6)* 100%);
+  background-color: var(--cor-branco);
+  min-width: 250px;
+  border-radius: 16px;
+  margin-left:1rem;
+  padding: 2rem;
+}
 
-section.assinar {}
+section.assinar .subtitulo{
+    font-size: clamp(1.3em, 0.2em + 3vw, 1.7em);
+}
 
-section.assinar {}
+section.assinar .subtitulo-completo{
+    color: var(--cor-principal);
+}
 
-section.assinar {}
+section.assinar .subtitulo-incompleto{
+    color: var(--cor-principal);
+}
+
+section.assinar .texto-cor-preto, .preto{
+    color: var(--cor-preto);
+}
+
+section.assinar .texto-cor-branco, .branco, .negrito-branco, .vezes-branco{
+    color: var(--cor-branco);
+}
+
+section.assinar .branco, .preto, .negrito{
+    font-family: var(--fonte-regular);
+    line-height: 2;
+}
+
+section.assinar .ofertados-incompleto, .vezes-preto{
+  color: var(--cor-preto);
+}
+
+section.assinar .negrito{
+    font-family: var(--fonte-medium);
+  }
+
+section.assinar .container-ofertados{
+    display: flex;
+}
 
 
+section.assinar .icone{
+    width: 20px;
+    margin-right: 0.8rem;
+}
+
+section.assinar .x{
+    width: 14px;
+    margin-right: 0.8rem;
+}
+
+
+section.assinar .texto-negrito{
+    font-weight: bold;
+}
+
+section.assinar .icone-diferente{
+   padding-bottom: 2rem;
+}
+
+section.assinar .preco{
+    padding-top: 2rem;
+ }
+
+ section.assinar .vezes, button{
+    font-family: var(--fonte-bold);
+    font-size: clamp(1em, 1em + 3vw, 1.2em);
+    overflow: hidden;
+ }
+
+ section.assinar .botao{
+    width: 100%;
+    padding-top: 2rem;
+}
+
+section.assinar button{
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: clamp(1em, 1em + 3vw, 1.5em);
+}
+
+ section.assinar .background-verde{
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+ }
+
+ section.assinar .background-amarelo{
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+ }
+
+ section.assinar .bold{
+    font-family: var(--fonte-bold);
+    font-size: clamp(1em, 1em + 3vw, 2em);
+    overflow-y: hidden;
+    }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+    section.assinar {
+        padding: 2rem 0;
+        background-size: 280%;
+    }
+
+    section.assinar .container-titulo{
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    section.assinar .container-escolhas{
+        width: 100%;
+        display: flex;
+        padding: 0 25px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    section.assinar .completo{
+        padding-top: 2rem;
+        margin-top: 4rem ;
+        margin-left:0;
+        margin-right:0;
+        width: 100%;
+    }
+    
+    section.assinar .incompleto{
+        padding-top: 2rem;
+        margin-top: 4rem ;
+        margin-left:0;
+        width: 100%;
+    
+    }
+
+    section.assinar .botao{
+        display: flex;
+        justify-content: center;
+    }
+
 }

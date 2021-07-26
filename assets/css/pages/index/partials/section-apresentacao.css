@@ -8,7 +8,6 @@ section.apresentacao{
   padding-top: 4rem;
   flex-direction: column;
   justify-content: space-between;
-  /* padding:5rem 0; */
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
 }
