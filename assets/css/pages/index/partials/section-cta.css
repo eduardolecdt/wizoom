@@ -1,11 +1,135 @@
 /* <section class="cta"> */
 
+/* <section class="publico"> */
+
 section.cta {
-  display: none;
+  width: 100vw;
+  height: 150vh;
+  padding-top: 4rem;
+  box-sizing: content-box;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  background-color: var(--cor-branco-transparente);
 }
+
+section.cta .titulo{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1.8em, 0.2em + 3vw, 2.5em);
+  padding: 0 80px;
+  z-index: 1;
+}
+
+section.cta .container-textos{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left:80px;
+  padding-top: 2rem;
+  z-index: 1;
+}
+
+section.cta .container-texto{
+  display: flex;
+}
+
+section.cta .numero{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1.5em, 0.2em + 3vw, 2em);
+  padding-right: 1.5rem;
+}
+
+section.cta .paragrafo{
+  margin-bottom: 0.8rem;
+}
+
+section.cta .texto-cor-principal{
+  color: var(--cor-principal);
+}
+
+section.cta .texto-chamativo{
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  font-size: clamp(1em, 0.2em + 3vw, 1.7em);
+  padding: 0 80px;
+  padding-top: 2rem;
+}
+
+section.cta .container{
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-image: url('https://static.wizoom.com.br/site/images/index/widnei-2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+section.cta .botao{
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 80px;
+}
+
+section.cta button{
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: clamp(1em, 1em + 3vw, 1.7em);
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+}
+
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+    
+  section.cta {
+    padding-top:2rem;
+    background-size: 280%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  } 
+  section.cta .titulo{
+  padding: 0 25px;
+  }
+
+  section.cta .paragrafo{
+    line-height: 2.5;
+  }
+
+  section.cta .container-textos{
+    width: 100%;
+    padding: 0 25px;
+    padding-top: 1rem;
+  }
+  section.cta .texto-chamativo{
+    width: 100%;
+    text-align: center;
+  }
   
+  section.cta .container{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: none;
+  }
+  section.cta .container-mobile{
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://static.wizoom.com.br/site/images/index/widnei-2.png');
+    background-repeat: no-repeat;
+   background-position: right bottom;
+    background-size: contain;
+    margin-top: 4rem;
+  } 
+
+  section.cta .botao{
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

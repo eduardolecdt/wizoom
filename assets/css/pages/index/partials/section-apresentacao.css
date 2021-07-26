@@ -103,16 +103,11 @@ section.apresentacao .menor-direita{
 
  section.apresentacao .botao-desktop{
   width: 100%;
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
   margin-bottom: 2rem;
-}
-
-section.apresentacao button{
-  height: 4rem;
 }
 
 section.apresentacao .botao-mobile{
@@ -127,8 +122,8 @@ section.apresentacao button{
   line-height: 1.5;
   font-family: var(--fonte-bold);
   border: none;
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 20px;
 }
 
 /* Responsivo */
