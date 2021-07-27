@@ -1,6 +1,6 @@
 /* <section class="apresentacao"> */
 
-section.apresentacao{
+section.apresentacao {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
@@ -12,151 +12,144 @@ section.apresentacao{
   background-size: 90%;
 }
 
-section.apresentacao .container-titulo{
+section.apresentacao .container-titulo {
   text-align: center;
   padding: 0 80px;
 }
 
-section.apresentacao .titulo{
-  font-size: clamp(1em, 1em + 3vw, 2.4em);
+section.apresentacao h1 {
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
   padding-bottom: 1rem;
 }
 
-section.apresentacao .texto-cor-principal{
+section.apresentacao .texto-cor-principal {
   color: var(--cor-principal);
 }
 
-section.apresentacao .subtitulo{
-  font-size: clamp(1em, 1em + 3vw, 1.2em);
+section.apresentacao h2 {
+  font-size: clamp(1rem, 5vw, 1.2rem);
   line-height: 1.5;
   font-family: var(--fonte-regular);
   color: var(--cor-branco);
   padding-bottom: 4rem;
 }
 
-
-section.apresentacao .texto-fonte-negrito{
+section.apresentacao .texto-fonte-negrito {
   font-family: var(--fonte-bold);
 }
 
-section.apresentacao .container-imagens{
+section.apresentacao .container-imagens {
   width: 100%;
   padding: 0 80px;
   display: flex;
   justify-content: space-around;
 }
 
-section.apresentacao .logo-menor{
+section.apresentacao .logo-menor {
   width: 70px;
   bottom: 0;
 }
 
-section.apresentacao .logo-maior{
+section.apresentacao .logo-maior {
   width: 100px;
   bottom: 0;
 }
 
-section.apresentacao .quadrado{
-  width: 700px;
-  min-width: 300px;
-  min-height: 30vh;
-  background-color: var(--cor-branco);
+section.apresentacao iframe {
+  width: 724px;
+  height: 396px;
+  background-color: var(--cor-preto);
   border-radius: 20px;
 }
 
-section.apresentacao .logo-esquerda{
-  height: 65vh;
+section.apresentacao .logo-esquerda {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-section.apresentacao .logo-direita{
-  height: 60vh;
+section.apresentacao .logo-direita {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-section.apresentacao .maior-esquerda{
-      margin-right: 3rem;
-      padding-top: 3rem;
+section.apresentacao .maior-esquerda {
+  margin-right: 3rem;
+  padding-top: 3rem;
 }
 
-section.apresentacao .menor-esquerda{
+section.apresentacao .menor-esquerda {
   padding-top: 15rem;
   margin-left: 4rem;
 }
 
-section.apresentacao .maior-direita{
+section.apresentacao .maior-direita {
   padding-bottom: 15rem;
 }
 
-
-section.apresentacao .menor-direita{
+section.apresentacao .menor-direita {
   margin-left: 4rem;
   margin-bottom: 1rem;
 }
 
- section.apresentacao .botao-desktop{
+section.apresentacao .botao-desktop {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  padding-bottom: 60px;
 }
 
-section.apresentacao .botao-mobile{
+section.apresentacao .botao-mobile {
   display: none;
 }
 
-section.apresentacao button{
-  width: 40%;
+section.apresentacao button {
   background-color: var(--cor-principal);
   color: var(--cor-branco);
-  font-size: clamp(1em, 1em + 3vw, 1.2em);
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   border: none;
-  padding: 2rem;
+  padding: 20px 35px;
   border-radius: 20px;
+  transition: all 0.3s;
+}
+
+section.apresentacao button:hover {
+  background-color: var(--cor-verde);
 }
 
 /* Responsivo */
 @media screen and (max-width: 1000px) {
-  section.apresentacao{
-    padding: 2rem 0;
+  section.apresentacao {
+    padding: 50px 0;  
     background-size: 280%;
   }
-  section.apresentacao .container-titulo, .container-imagens{
-      padding: 0 25px;
+  section.apresentacao .container-titulo, .container-imagens {
+    padding: 0 25px;
   }
-
-  section.apresentacao .subtitulo{
+  section.apresentacao h2 {
     padding-bottom: 2rem;
   }
-
-  section.apresentacao .logo-esquerda{
-      display: none;
+  section.apresentacao .logo-esquerda {
+    display: none;
   }
-  
-  section.apresentacao .logo-direita{
-      display: none;
+  section.apresentacao .logo-direita {
+    display: none;
   }
-
-  section.apresentacao .botao-mobile{
+  section.apresentacao .botao-mobile {
     width: 100%;
     padding: 0 25px;
     padding-top: 3rem;
     display: flex;
     justify-content: center;
   }
-
-  section.apresentacao button{
+  section.apresentacao button {
     width: 80%;
     height: auto;
     background-color: var(--cor-principal);
@@ -168,9 +161,12 @@ section.apresentacao button{
     padding: 1rem;
     border-radius: 10px;
   }
-
-  section.apresentacao .botao-desktop{
+  section.apresentacao .botao-desktop {
     display: none;
   }
-  
+  section.apresentacao iframe {
+    width: 360px;
+    height: 180px;
+    border-radius: 15px;
+  }
 }

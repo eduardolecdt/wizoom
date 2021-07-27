@@ -9,8 +9,8 @@ section.conteudo {
   background-size: 90%;
 }
 
-section.conteudo .titulo{
-  font-size: clamp(1em, 1em + 3vw, 2.5em);
+section.conteudo h2 {
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
@@ -18,22 +18,23 @@ section.conteudo .titulo{
   padding: 0 80px;
 }
 
-section.conteudo .explicacoes{
+section.conteudo .explicacoes {
   width: 100%;
 }
 
-section.conteudo .texto-cor-principal-destaque{
+section.conteudo .texto-cor-principal-destaque {
   color: var(--cor-principal);
-  font-size: clamp(1em, 1em + 3vw, 2.5em);
-}
-
-section.conteudo .texto-negrito{
   font-family: var(--fonte-bold);
-  font-size: clamp(0.5em, 0.5em + 2vw, 1em);
-
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  line-height: 1.5;
 }
 
-section.conteudo .container-explicacao{
+section.conteudo .texto-negrito {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+section.conteudo .container-explicacao {
   width: 100%;
   background-color: var(--cor-branco-transparente);
   margin: 2rem 0;
@@ -41,40 +42,33 @@ section.conteudo .container-explicacao{
   border-radius: 16px;
 }
 
-section.conteudo, .titulo{
-  font-size: clamp(0.5em, 0.5em + 2vw, 1.7em);
-}
-
-section.conteudo, .subtitulo, .titulo{
-  line-height: 1.5;
+section.conteudo h3 {
   font-family: var(--fonte-bold);
+  font-size: clamp(1.4rem, 5vw, 1.7rem);
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
   color: var(--cor-branco);
 }
 
-section.conteudo, .subtitulo{
-  font-size: clamp(0.5em, 0.5em + 2vw, 1.4em);
-  padding-bottom: 1.5rem;
-}
-
-section.conteudo, .texto-cor-verde{
-  font-size: clamp(0.5em, 0.5em + 2vw, 1.2em);
+section.conteudo .texto-cor-verde {
+  font-size: clamp(1rem, 5vw, 1.2rem);
   font-family: var(--fonte-medium);
   color: var(--cor-verde);
 }
 
-
-section.conteudo .texto-cor-principal{
+section.conteudo .texto-cor-principal {
   color: var(--cor-principal);
 }
 
-section.conteudo .container-explicacao{
-  color: white;
-  font-size: clamp(0.5em, 0.5em + 2vw, 0.9em);
-  line-height: 1.5;
+section.conteudo .container-explicacao p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
   font-family: var(--fonte-regular);
+  line-height: 1.7;
+  color: var(--cor-branco);
+  padding: 0 0 20px 0;
 }
 
-section.conteudo .botao-desktop{
+section.conteudo .botao-desktop {
   width: 100%;
   display: flex;
   align-items: center;
@@ -82,69 +76,66 @@ section.conteudo .botao-desktop{
   margin-top: 4rem;
   margin-bottom: 2rem;
   overflow: hidden;
-
 }
 
-section.conteudo .botao-mobile{
+section.conteudo .botao-mobile {
   display: none;
 }
 
-section.conteudo button{
-  width: 50%;
+section.conteudo button {
   background-color: var(--cor-principal);
   color: var(--cor-branco);
-  font-size: clamp(1em, 1em + 3vw, 1.2em);
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   border: none;
-  padding: 2rem;
+  padding: 20px 35px;
   border-radius: 20px;
+  transition: all 0.3s;
 }
 
+section.conteudo button:hover {
+  background-color: var(--cor-verde);
+}
 
 /* Responsivo */
+
 @media screen and (max-width: 1000px) {
   section.conteudo {
     background-size: 280%;
     padding: 4rem 25px;
-
   }
-
-  section.conteudo .titulo{
-      padding: 0 25px;
+  section.conteudo h2 {
+    padding: 0;
   }
-  
-  section.conteudo .explicacoes{
-      padding: 0 25px;
+  section.conteudo .container-explicacao {
+    width: 100%;
+    background-color: var(--cor-branco-transparente);
+    margin: 2rem 0;
+    padding: 30px;
+    border-radius: 16px;
   }
-
-  section.conteudo .botao-desktop{
-   display: none;
+  section.conteudo .botao-desktop {
+    display: none;
   }
-
-section.conteudo .botao-mobile{
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  section.conteudo .botao-mobile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  section.conteudo button {
+    width: 80%;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font-size: clamp(1em, 1em + 3vw, 1.2em);
+    line-height: 1.5;
+    font-family: var(--fonte-bold);
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+  }
 }
-
-section.conteudo button{
-  width: 80%;
-  background-color: var(--cor-principal);
-  color: var(--cor-branco);
-  font-size: clamp(1em, 1em + 3vw, 1.2em);
-  line-height: 1.5;
-  font-family: var(--fonte-bold);
-  border: none;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-}
-
-
-

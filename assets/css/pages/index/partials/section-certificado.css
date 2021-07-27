@@ -1,33 +1,33 @@
 /* <section class="certificado"> */
 
-section.certificado{
+section.certificado {
   width: 100vw;
   height: auto;
-  padding: 4rem 0;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
-  padding: 4rem 80px;
+  padding: 80px;
 }
 
-section.certificado .container-certificado{
+section.certificado .container-certificado {
   background-color: var(--cor-branco-transparente);
   padding: 2rem;
   border-radius: 20px;
   display: flex;
 }
 
-section.certificado img{
-  max-width: 85%;
+section.certificado img {
+  max-width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
-section.certificado .container-img{
-  width:55%;
+section.certificado .container-img {
+  width: 50%;
   display: flex;
   justify-content: center;
 }
 
-section.certificado .paragrafo{
+section.certificado .paragrafo {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -35,57 +35,52 @@ section.certificado .paragrafo{
   padding-left: 6rem;
 }
 
-section.certificado .paragrafo-certificado{
-  font-size: clamp(0.2em, 0.2em + 3vw, 1.2em);
-  line-height: 1.5;
+section.certificado h2 {
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.7;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
 }
 
-section.certificado .texto-cor-principal{
+section.certificado p {
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.7;
+  font-family: var(--fonte-bold);
   color: var(--cor-principal);
-  padding-top: 3rem;
+  padding-top: 30px;
 }
 
-
 /* Responsivo */
+
 @media screen and (max-width: 1000px) {
-  section.certificado{
-      padding: 4rem 20px;
-      background-size: 280%;      
-      
+  section.certificado {
+    padding: 4rem 20px;
+    background-size: 280%;
   }
-  section.certificado .container-certificado{
-      display: flex;
-      flex-direction: column;
+  section.certificado .container-certificado {
+    display: flex;
+    flex-direction: column;
   }
-  
-  section.certificado .container-img{
-    width:100%;
+  section.certificado .container-img {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
   }
-
-  section.certificado img{
+  section.certificado img {
     max-width: 100%;
     height: auto;
   }
-
-  section.certificado .texto-cor-principal{
+  section.certificado .texto-cor-principal {
     color: var(--cor-principal);
     padding-left: none;
   }
-
-  section.certificado .paragrafo{
+  section.certificado .paragrafo {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  
+    justify-content: flex-start;
     align-items: flex-start;
     padding-left: 0;
-
   }
 }
-
-

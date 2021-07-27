@@ -2,7 +2,6 @@
 
 section.depoimentos {
   width: 100vw;
-  min-height: 85vh;
   height: auto;
   padding: 0 80px 4rem 80px;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
@@ -10,32 +9,32 @@ section.depoimentos {
   background-color: var(--cor-branco-transparente);
 }
 
-section.depoimentos .titulo{
-  font-size: clamp(0.5em, 1em + 3vw, 2.4em);
+section.depoimentos h2 {
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
   padding: 4rem 0 2rem 0;
 }
 
-section.depoimentos .depoimentos{
+section.depoimentos .depoimentos {
   display: flex;
   justify-content: space-between;
   text-align: left;
   flex-wrap: wrap;
 }
 
-section.depoimentos .container-depoimento{
+section.depoimentos .container-depoimento {
   background-color: var(--cor-cinza-escuro-1);
   width: calc((0.32)* 100%);
   min-width: 250px;
-  height: 8rem ;
+  height: 8rem;
   border-radius: 16px;
   margin: 1rem 0.1rem;
   padding: 1rem;
 }
 
-section.depoimentos .nome{
+section.depoimentos h3 {
   color: var(--cor-principal);
   font-family: var(--fonte-bold);
   font-size: clamp(0.5em, 0.2em + 3vw, 0.9em);
@@ -43,7 +42,7 @@ section.depoimentos .nome{
   flex-wrap: wrap
 }
 
-section.depoimentos .depoimento{
+section.depoimentos p {
   color: var(--cor-branco);
   font-family: var(--fonte-medium);
   font-size: clamp(0.5em, 0.2em + 3vw, 0.9em);
@@ -52,19 +51,19 @@ section.depoimentos .depoimento{
 }
 
 /* Responsivo */
+
 @media screen and (max-width: 1000px) {
-
-  section.depoimentos{
-  padding: 0 25px 4rem 25px;
-
+  section.depoimentos {
+    padding: 0 25px 4rem 25px;
   }
-  section.depoimentos .depoimentos{
-      justify-content: center;
+  section.depoimentos .container-depoimento {
+    width: 100%;
+    min-width: 100%;
   }
-
-  section.depoimentos .titulo{
-      text-align: center;
+  section.depoimentos .depoimentos {
+    justify-content: center;
+  }
+  section.depoimentos h2 {
+    text-align: center;
   }
 }
-
-

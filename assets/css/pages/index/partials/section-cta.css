@@ -1,62 +1,45 @@
 /* <section class="cta"> */
 
-/* <section class="publico"> */
-
 section.cta {
   width: 100vw;
-  height: 150vh;
-  padding-top: 4rem;
+  padding: 80px 0 0 0;
   box-sizing: content-box;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
   background-color: var(--cor-branco-transparente);
 }
 
-section.cta .titulo{
+section.cta h2 {
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
   font-size: clamp(1.8em, 0.2em + 3vw, 2.5em);
   padding: 0 80px;
-  z-index: 1;
+  line-height: 1.7;
 }
 
-section.cta .container-textos{
+section.cta .container-textos {
   width: 60%;
   display: flex;
   flex-direction: column;
-  padding-left:80px;
-  padding-top: 2rem;
+  padding-left: 80px;
+  padding-top: 20px;
   z-index: 1;
 }
 
-section.cta .container-texto{
+section.cta .container-texto {
   display: flex;
 }
 
-section.cta .numero{
-  font-family: var(--fonte-bold);
-  color: var(--cor-branco);
-  font-size: clamp(1.5em, 0.2em + 3vw, 2em);
-  padding-right: 1.5rem;
-}
-
-section.cta .paragrafo{
+section.cta p {
   margin-bottom: 0.8rem;
-}
-
-section.cta .texto-cor-principal{
-  color: var(--cor-principal);
-}
-
-section.cta .texto-chamativo{
-  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.7;
+  font-family: var(--fonte-regular);
   color: var(--cor-branco);
-  font-size: clamp(1em, 0.2em + 3vw, 1.7em);
-  padding: 0 80px;
-  padding-top: 2rem;
+  padding: 30px 0 0 0;
 }
 
-section.cta .container{
+section.cta .container {
   height: 100%;
   width: 100%;
   z-index: 0;
@@ -66,68 +49,63 @@ section.cta .container{
   background-size: contain;
 }
 
-section.cta .botao{
+section.cta .botao {
   width: 100%;
-  padding-top: 2rem;
-  padding-left: 80px;
+  padding: 30px 0 80px 80px;
 }
 
-section.cta button{
-  padding: 2rem;
-  border-radius: 20px;
-  font-size: clamp(1em, 1em + 3vw, 1.7em);
+section.cta button {
   background-color: var(--cor-principal);
   color: var(--cor-branco);
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  border: none;
+  padding: 20px 35px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+section.cta button:hover {
+  background-color: var(--cor-verde);
 }
 
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-    
   section.cta {
-    padding-top:2rem;
+    padding-top: 2rem;
     background-size: 280%;
     height: auto;
     display: flex;
     flex-direction: column;
-  } 
-  section.cta .titulo{
-  padding: 0 25px;
   }
-
-  section.cta .paragrafo{
-    line-height: 2.5;
+  section.cta h2 {
+    padding: 0 25px;
   }
-
-  section.cta .container-textos{
+  section.cta .container-textos {
     width: 100%;
     padding: 0 25px;
     padding-top: 1rem;
   }
-  section.cta .texto-chamativo{
-    width: 100%;
-    text-align: center;
-  }
-  
-  section.cta .container{
+  section.cta .container {
     height: 100%;
     width: 100%;
     z-index: 0;
     background-image: none;
   }
-  section.cta .container-mobile{
+  section.cta .container-mobile {
     width: 100%;
     height: 70vh;
     background-image: url('https://static.wizoom.com.br/site/images/index/widnei-2.png');
     background-repeat: no-repeat;
-   background-position: right bottom;
+    background-position: right bottom;
     background-size: contain;
     margin-top: 4rem;
-  } 
-
-  section.cta .botao{
-    padding: 0 25px;
+  }
+  section.cta .botao {
+    padding: 20px 25px 50px 25px;
     display: flex;
     justify-content: center;
     align-items: center;

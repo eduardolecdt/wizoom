@@ -1,17 +1,16 @@
 /* <section class="duvidas"> */
 
-
-section.duvidas{
+section.duvidas {
   width: 100vw;
   height: auto;
   box-sizing: content-box;
-  padding-top: 4rem;
+  padding: 4rem 0;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
 }
 
-section.duvidas .titulo{
-  font-size: clamp(1em, 1em + 3vw, 2.5em);
+section.duvidas h2 {
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
   line-height: 1.5;
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
@@ -19,99 +18,71 @@ section.duvidas .titulo{
   padding-bottom: 2rem;
 }
 
-section.duvidas .texto-cor-principal{
+section.duvidas .texto-cor-principal {
   color: var(--cor-principal);
 }
 
-section.duvidas .container-duvida{
+section.duvidas .container-duvida {
   padding: 0 80px;
   display: flex;
-}
-
-section.duvidas .duvida {
-  min-width: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 section.duvidas img {
   width: 70px;
 }
-section.duvidas .texto-negrito{
-  font-family: var(--fonte-bold);
+
+section.duvidas .duvida {
+  min-width: 100px;
 }
 
-section.duvidas .titulo-duvida{
-  font-size: clamp(1em, 0.2em + 2vw, 1.2em);
+section.duvidas h3 {
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
   line-height: 1.5;
   color: var(--cor-principal);
   font-family: var(--fonte-bold);
 }
 
-section.duvidas .paragrafo-duvida{
+section.duvidas p {
   color: white;
-  font-size: clamp(0.7em, 0.2em + 1vw, 1em);
-  line-height: 1.5;
-  font-family: var(--fonte-medium);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.7;
+  font-family: var(--fonte-regular);
+  padding: 15px 0 0 0;
 }
 
-section.duvidas .texto{
+section.duvidas .texto {
   padding-left: 1rem;
   padding-bottom: 3rem;
 }
 
-footer{
+footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 15rem;
-}
-
-section.duvidas .logo{
-  width: 50px;
+  justify-content: center;
+  padding: 100px 0 50px 0;
 }
 
 /* Responsivo */
+
 @media screen and (max-width: 1000px) {
-  section.duvidas{
+  section.duvidas {
     background-size: 280%;
   }
-  
-  section.duvidas .titulo{
-      padding: 0 25px;
-      padding-bottom: 3rem;
-      text-align: center;
+  section.duvidas h2 {
+    padding: 0 20px;
+    padding-bottom: 3rem;
+    text-align: left;
   }
-  
-  section.duvidas .container-duvida{
-      padding: 0 25px;
+  section.duvidas .container-duvida {
+    padding: 0 25px;
   }
-
   section.duvidas img {
-      width: 60px;
+    width: 60px;
   }
-
   section.duvidas .duvida {
-      min-width: 60px;
+    min-width: 60px;
   }
-
-  section.duvidas .texto{
-      padding-left: 1rem;
-      padding-bottom: 3rem;
-      line-height: 3;
+  section.duvidas .texto {
+    padding-left: 1rem;
   }
-
-  section.duvidas .paragrafo-duvida{
-    line-height: 3;
-  }
-      
-  section.duvidas .logo{
-      width: 60px;
-  }
-
 }
-
-
-
-

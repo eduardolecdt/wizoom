@@ -1,6 +1,5 @@
 /* <section class="garantia"> */
 
-
 section.garantia {
   width: 100vw;
   height: auto;
@@ -13,7 +12,7 @@ section.garantia {
 
 section.garantia .container-imagens {
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   padding: 0 80px;
   margin-bottom: 2rem;
@@ -42,17 +41,21 @@ section.garantia .logo-menor {
 }
 
 section.garantia .container-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 60%;
   text-align: center;
   padding: 0 80px 0 80px;
 }
 
-section.garantia .texto-cor-principal{
+section.garantia .texto-cor-principal {
   color: var(--cor-principal);
 }
 
-section.garantia .texto-titulo{
+section.garantia h2 {
   font-size: clamp(1em, 1em + 3vw, 2.4em);
   line-height: 1.5;
   font-family: var(--fonte-bold);
@@ -60,45 +63,34 @@ section.garantia .texto-titulo{
   padding-bottom: 2rem;
 }
 
-section.garantia .texto{
+section.garantia p {
   font-size: clamp(0.5em, 0.5em + 2vw, 1.2em);
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: var(--fonte-regular);
   color: var(--cor-branco);
+  width: 100%;
+  max-width: 900px;
 }
 
 /* Responsivo */
+
 @media screen and (max-width: 1000px) {
   section.garantia {
-    padding-bottom: 2rem;
+    padding-bottom: 50px;
     background-size: 280%;
   }
-
-  section.garantia .container-textos{
-      padding: 0 25px;
+  section.garantia .container-textos {
+    padding: 0 25px;
   }
-
   section.garantia .logo-maior {
-      display: none;    }
-  
+    display: none;
+  }
   section.garantia .homem {
-      width: 300px;
-      bottom: 0;
-      position: absolute;
+    width: 250px;
+    bottom: 0;
+    position: absolute;
   }
-  
   section.garantia .logo-menor {
-      display: none;
+    display: none;
   }
-
-
-section.garantia .texto{
-  line-height: 3;
 }
-}
-
-
-
-
-
-

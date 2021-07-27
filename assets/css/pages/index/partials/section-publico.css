@@ -2,7 +2,6 @@
 
 section.publico {
   width: 100vw;
-  height: 150vh;
   padding-top: 4rem;
   box-sizing: content-box;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
@@ -10,105 +9,86 @@ section.publico {
   background-color: var(--cor-branco-transparente);
 }
 
-section.publico .titulo{
+section.publico h2 {
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
-  font-size: clamp(1.8em, 0.2em + 3vw, 2.5em);
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
   padding: 0 80px;
-  z-index: 1;
 }
 
-section.publico .container-textos{
+section.publico .container-textos {
   width: 60%;
   display: flex;
   flex-direction: column;
-  padding-left:80px;
-  padding-top: 2rem;
-  z-index: 1;
+  padding-left: 80px;
 }
 
-section.publico .container-texto{
+section.publico .container-texto {
   display: flex;
+  padding: 50px 0 0 0;
 }
 
-section.publico .numero{
+section.publico h3 {
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
-  font-size: clamp(1.5em, 0.2em + 3vw, 2em);
-  padding-right: 1.5rem;
+  font-size: clamp(1.7rem, 5vw, 2rem);
+  line-height: 1.6;
+  min-width: 40px;
 }
 
-section.publico .paragrafo{
-  margin-bottom: 2rem;
+section.publico p {
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.7;
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
 }
 
-section.publico .texto-cor-principal{
+section.publico .texto-cor-principal {
   color: var(--cor-principal);
 }
 
-section.publico .texto-chamativo{
+section.publico h4 {
   font-family: var(--fonte-bold);
   color: var(--cor-branco);
-  font-size: clamp(1em, 0.2em + 3vw, 1.7em);
-  padding: 0 80px;
-  padding-top: 2rem;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  padding: 80px;
+  overflow: hidden;
 }
 
-section.publico .container{
+section.publico .container {
   height: 100%;
   width: 100%;
-  z-index: 0;
   background-image: url('https://static.wizoom.com.br/site/images/index/widnei-1.png');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
 }
 
-
-
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-    
   section.publico {
-    padding-top:2rem;
+    padding-top: 50px;
     background-size: 280%;
     height: auto;
     display: flex;
     flex-direction: column;
-  } 
-  section.publico .titulo{
-  padding: 0 25px;
   }
-
-  section.publico .paragrafo{
-    line-height: 2.5;
+  section.publico h2 {
+    padding: 0 25px;
   }
-
-  section.publico .container-textos{
+  section.publico .container-textos {
     width: 100%;
     padding: 0 25px;
-    padding-top: 1rem;
   }
-  section.publico .texto-chamativo{
-    width: 100%;
-    text-align: center;
+  section.publico h4 {
+    text-align: left;
+    padding: 50px 25px;
+    min-width: 30px;
   }
-  
-  section.publico .container{
+  section.publico .container {
     height: 100%;
     width: 100%;
-    z-index: 0;
     background-image: none;
   }
-  section.publico .container-mobile{
-    width: 100%;
-    height: 70vh;
-    background-image: url('https://static.wizoom.com.br/site/images/index/widnei-1.png');
-    background-repeat: no-repeat;
-   background-position: right bottom;
-    background-size: contain;
-    margin-top: 4rem;
-  } 
-
 }

@@ -148,3 +148,9 @@ button::-moz-focus-inner,
   opacity: 0;
   visibility: hidden;
 }
+
+@media screen and ( max-width: 1000px ) {
+  br {
+    display: none;
+  }
+}
