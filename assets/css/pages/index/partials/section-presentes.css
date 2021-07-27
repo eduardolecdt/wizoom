@@ -1,11 +1,97 @@
 /* <section class="presentes"> */
 
-section.presentes {
-  display: none;
+
+section.presentes{
+  width: 100vw;
+  height: auto;
+  box-sizing: content-box;
+  padding: 4rem 0;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  background-color: var(--cor-branco-transparente);
+}
+
+section.presentes .titulo{
+  font-size: clamp(1em, 1em + 3vw, 2.5em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  padding: 0 80px;
+  padding-bottom: 2rem;
+}
+
+section.presentes .texto-cor-principal{
+  color: var(--cor-principal);
+}
+
+section.presentes .container-presentes{
+  padding: 0 80px;
+  display: flex;
+}
+
+section.presentes img {
+  width: 70px;
+}
+
+section.presentes .presente{
+  min-width: 100px;
+}
+
+section.presentes .paragrafo-presente-line{
+  padding-top: 2rem;
+}
+
+section.presentes .titulo-presente{
+  font-size: clamp(0.5em, 0.5em + 2vw, 1.2em);
+  line-height: 1.5;
+  color: var(--cor-principal);
+  font-family: var(--fonte-bold);
+}
+
+section.presentes .paragrafo-presente{
+  color: white;
+  font-size: clamp(0.5em, 0.5em + 2vw, 1em);
+  line-height: 1.5;
+  font-family: var(--fonte-medium);
+}
+
+section.presentes .texto{
+  padding-left: 1rem;
+  padding-bottom: 3rem;
 }
 
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+
+  section.presentes{
+    background-size: 280%;
+  }
+  section.presentes .titulo{
+      padding: 0 20px;
+      padding-bottom: 3rem;
+      text-align: left;
+  }
   
+  section.presentes .container-presentes{
+      padding: 0 25px;
+  }
+
+  section.presentes img {
+      width: 60px;
+  }
+
+  section.presentes .presente{
+      min-width: 60px;
+  }
+
+
+section.presentes .texto{
+  padding-left: 1rem;
 }
+}
+
+
+
+
+
+

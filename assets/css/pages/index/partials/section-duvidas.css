@@ -1,11 +1,117 @@
 /* <section class="duvidas"> */
 
-section.duvidas {
-  display: none;
+
+section.duvidas{
+  width: 100vw;
+  height: auto;
+  box-sizing: content-box;
+  padding-top: 4rem;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+}
+
+section.duvidas .titulo{
+  font-size: clamp(1em, 1em + 3vw, 2.5em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  padding: 0 80px;
+  padding-bottom: 2rem;
+}
+
+section.duvidas .texto-cor-principal{
+  color: var(--cor-principal);
+}
+
+section.duvidas .container-duvida{
+  padding: 0 80px;
+  display: flex;
+}
+
+section.duvidas .duvida {
+  min-width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+section.duvidas img {
+  width: 70px;
+}
+section.duvidas .texto-negrito{
+  font-family: var(--fonte-bold);
+}
+
+section.duvidas .titulo-duvida{
+  font-size: clamp(1em, 0.2em + 2vw, 1.2em);
+  line-height: 1.5;
+  color: var(--cor-principal);
+  font-family: var(--fonte-bold);
+}
+
+section.duvidas .paragrafo-duvida{
+  color: white;
+  font-size: clamp(0.7em, 0.2em + 1vw, 1em);
+  line-height: 1.5;
+  font-family: var(--fonte-medium);
+}
+
+section.duvidas .texto{
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+
+section.duvidas .logo{
+  width: 50px;
 }
 
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.duvidas{
+    background-size: 280%;
+  }
   
+  section.duvidas .titulo{
+      padding: 0 25px;
+      padding-bottom: 3rem;
+      text-align: center;
+  }
+  
+  section.duvidas .container-duvida{
+      padding: 0 25px;
+  }
+
+  section.duvidas img {
+      width: 60px;
+  }
+
+  section.duvidas .duvida {
+      min-width: 60px;
+  }
+
+  section.duvidas .texto{
+      padding-left: 1rem;
+      padding-bottom: 3rem;
+      line-height: 3;
+  }
+
+  section.duvidas .paragrafo-duvida{
+    line-height: 3;
+  }
+      
+  section.duvidas .logo{
+      width: 60px;
+  }
+
 }
+
+
+
+

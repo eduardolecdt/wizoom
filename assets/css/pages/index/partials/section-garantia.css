@@ -1,11 +1,104 @@
 /* <section class="garantia"> */
 
+
 section.garantia {
-  display: none;
+  width: 100vw;
+  height: auto;
+  box-sizing: content-box;
+  padding-bottom: 4rem;
+  background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
+  background-size: 90%;
+  position: relative;
+}
+
+section.garantia .container-imagens {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  padding: 0 80px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+section.garantia .logo-maior {
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  right: 220px;
+}
+
+section.garantia .homem {
+  width: 300px;
+  bottom: 0;
+  position: absolute;
+}
+
+section.garantia .logo-menor {
+  width: 60px;
+  bottom: 0;
+  left: 220px;
+  position: absolute;
+}
+
+section.garantia .container-textos {
+  width: 100vw;
+  height: 60%;
+  text-align: center;
+  padding: 0 80px 0 80px;
+}
+
+section.garantia .texto-cor-principal{
+  color: var(--cor-principal);
+}
+
+section.garantia .texto-titulo{
+  font-size: clamp(1em, 1em + 3vw, 2.4em);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  color: var(--cor-branco);
+  padding-bottom: 2rem;
+}
+
+section.garantia .texto{
+  font-size: clamp(0.5em, 0.5em + 2vw, 1.2em);
+  line-height: 1.5;
+  font-family: var(--fonte-regular);
+  color: var(--cor-branco);
 }
 
 /* Responsivo */
-
 @media screen and (max-width: 1000px) {
+  section.garantia {
+    padding-bottom: 2rem;
+    background-size: 280%;
+  }
+
+  section.garantia .container-textos{
+      padding: 0 25px;
+  }
+
+  section.garantia .logo-maior {
+      display: none;    }
   
+  section.garantia .homem {
+      width: 300px;
+      bottom: 0;
+      position: absolute;
+  }
+  
+  section.garantia .logo-menor {
+      display: none;
+  }
+
+
+section.garantia .texto{
+  line-height: 3;
 }
+}
+
+
+
+
+
+
