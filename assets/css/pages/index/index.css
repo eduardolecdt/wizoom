@@ -4,6 +4,7 @@
 
 /* Partials */
 
+@import './partials/button-whatsapp.css';
 @import './partials/section-apresentacao.css';
 @import './partials/section-assinar.css';
 @import './partials/section-autor.css';

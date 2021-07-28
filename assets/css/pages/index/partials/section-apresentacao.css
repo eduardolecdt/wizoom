@@ -39,6 +39,7 @@ section.apresentacao h2 {
 
 section.apresentacao .texto-fonte-negrito {
   font-family: var(--fonte-bold);
+  color: var(--cor-principal);
 }
 
 section.apresentacao .container-imagens {

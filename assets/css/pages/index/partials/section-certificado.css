@@ -50,6 +50,25 @@ section.certificado p {
   padding-top: 30px;
 }
 
+section.certificado button {
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
+  line-height: 1.5;
+  font-family: var(--fonte-bold);
+  border: none;
+  padding: 20px 35px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 30px 0 0 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.certificado button:hover {
+  background-color: var(--cor-verde);
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {

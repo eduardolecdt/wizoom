@@ -26,6 +26,11 @@ section.valor p {
   padding: 20px 0 0 0;
 }
 
+section.valor p span {
+  font-family: var(--fonte-medium);
+  color: var(--cor-principal);
+}
+
 section.valor h4 {
   font-family: var(--fonte-bold);
   line-height: 1.7;

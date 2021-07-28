@@ -18,6 +18,10 @@ section.conteudo h2 {
   padding: 0 80px;
 }
 
+section.conteudo h2 span {
+  color: var(--cor-principal);
+}
+
 section.conteudo .explicacoes {
   width: 100%;
 }
@@ -31,7 +35,8 @@ section.conteudo .texto-cor-principal-destaque {
 
 section.conteudo .texto-negrito {
   font-family: var(--fonte-bold);
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  color: var(--cor-principal);
 }
 
 section.conteudo .container-explicacao {
@@ -51,7 +56,7 @@ section.conteudo h3 {
 }
 
 section.conteudo .texto-cor-verde {
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
   font-family: var(--fonte-medium);
   color: var(--cor-verde);
 }
@@ -66,6 +71,17 @@ section.conteudo .container-explicacao p {
   line-height: 1.7;
   color: var(--cor-branco);
   padding: 0 0 20px 0;
+}
+
+section.conteudo .container-explicacao p.cor {
+  font-family: var(--fonte-medium);
+  color: var(--cor-principal);
+  padding: 0 0 0 0;
+}
+
+section.conteudo .container-explicacao p span {
+  font-family: var(--fonte-medium);
+  color: var(--cor-principal);
 }
 
 section.conteudo .botao-desktop {

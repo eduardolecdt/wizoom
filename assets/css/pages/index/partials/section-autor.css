@@ -56,6 +56,10 @@ section.autor h2 {
   padding-top: 2rem;
 }
 
+section.autor h2 span {
+  color: var(--cor-principal);
+}
+
 section.autor p {
   font-size: clamp(1rem, 5vw, 1.2rem);
   line-height: 1.7;

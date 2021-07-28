@@ -17,6 +17,10 @@ section.cta h2 {
   line-height: 1.7;
 }
 
+section.cta h2 span {
+  color: var(--cor-principal);
+}
+
 section.cta .container-textos {
   width: 60%;
   display: flex;
