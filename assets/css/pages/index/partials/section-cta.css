@@ -6,7 +6,6 @@ section.cta {
   box-sizing: content-box;
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
-  background-color: var(--cor-branco-transparente);
 }
 
 section.cta h2 {

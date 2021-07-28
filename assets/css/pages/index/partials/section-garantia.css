@@ -8,6 +8,7 @@ section.garantia {
   background-image: url('https://static.wizoom.com.br/site/images/index/linhas-background.png');
   background-size: 90%;
   position: relative;
+  background-color: var(--cor-branco-transparente);
 }
 
 section.garantia .container-imagens {

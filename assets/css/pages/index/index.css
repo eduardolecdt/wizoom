@@ -17,5 +17,6 @@
 @import './partials/section-presentes.css';
 @import './partials/section-publico.css';
 @import './partials/section-valor.css';
+@import './partials/section-videos.css';
 
 *{ overflow-x: hidden; }
