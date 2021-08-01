@@ -1,0 +1,69 @@
+/* <section class="tempo"> */
+
+section.tempo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 80px;
+  background-color: var(--cor-principal);
+  position: relative;
+}
+
+/* Texto */
+
+section.tempo h2 {
+  font-family: var(--fonte-medium);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Temporizador */
+
+section.tempo .temporizador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.tempo .temporizador .item {
+  min-width: 100px;
+}
+
+section.tempo .temporizador .item h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--cor-cinza-escuro-1);
+  line-height: 1.5;
+}
+
+section.tempo .temporizador .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.9rem, 5vw, 1rem);
+  color: var(--cor-cinza-escuro-1);
+  line-height: 1.5;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 600px) {
+  section.tempo {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  section.tempo h2 {
+    margin-right: 0;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+  section.tempo .temporizador .item {
+    min-width: 80px;
+  }
+  section.tempo .temporizador .item p {
+    font-size: clamp(0.8rem, 5vw, 0.9rem);
+  }
+}
