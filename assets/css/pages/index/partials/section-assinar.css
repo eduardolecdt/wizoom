@@ -127,19 +127,19 @@ section.assinar .preco h5 {
 }
 
 section.assinar .completo .preco h4 {
-  color: var(--cor-branco);
-}
-
-section.assinar .incompleto .preco h4 {
-  color: var(--cor-preto);
-}
-
-section.assinar .completo .preco h5 {
   color: var(--cor-verde);
 }
 
-section.assinar .incompleto .preco h5 {
+section.assinar .incompleto .preco h4 {
   color: var(--cor-principal);
+}
+
+section.assinar .completo .preco h5 {
+  color: var(--cor-branco);
+}
+
+section.assinar .incompleto .preco h5 {
+  color: var(--cor-preto);
 }
 
 section.assinar .botao {

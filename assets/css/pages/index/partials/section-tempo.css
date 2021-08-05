@@ -5,7 +5,7 @@ section.tempo {
   align-items: center;
   justify-content: center;
   padding: 30px 80px;
-  background-color: var(--cor-principal);
+  background-color: var(--cor-vermelho);
   position: relative;
 }
 
@@ -37,14 +37,14 @@ section.tempo .temporizador .item {
 section.tempo .temporizador .item h3 {
   font-family: var(--fonte-bold);
   font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--cor-cinza-escuro-1);
+  color: var(--cor-branco);
   line-height: 1.5;
 }
 
 section.tempo .temporizador .item p {
   font-family: var(--fonte-regular);
   font-size: clamp(0.9rem, 5vw, 1rem);
-  color: var(--cor-cinza-escuro-1);
+  color: var(--cor-branco);
   line-height: 1.5;
 }
 
