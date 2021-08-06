@@ -116,12 +116,6 @@ section.assinar .preco {
 
 section.assinar .preco h4 {
   font-family: var(--fonte-bold);
-  font-size: clamp(1.2rem, 5vw, 1.4rem);
-  line-height: 1.5;
-}
-
-section.assinar .preco h5 {
-  font-family: var(--fonte-bold);
   font-size: clamp(1.7rem, 5vw, 2.3rem);
   line-height: 1.5;
 }
@@ -132,14 +126,6 @@ section.assinar .completo .preco h4 {
 
 section.assinar .incompleto .preco h4 {
   color: var(--cor-principal);
-}
-
-section.assinar .completo .preco h5 {
-  color: var(--cor-branco);
-}
-
-section.assinar .incompleto .preco h5 {
-  color: var(--cor-preto);
 }
 
 section.assinar .botao {
