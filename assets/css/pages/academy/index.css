@@ -4,4 +4,20 @@
 
 /* Partials */
 
-@import './partials/header.css';
+@import './partials/nav.css';
+@import './partials/footer.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-autor.css';
+@import './partials/section-bonus.css';
+@import './partials/section-certificado.css';
+@import './partials/section-comprar.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-descobrir.css';
+@import './partials/section-detalhes.css';
+@import './partials/section-garantia.css';
+@import './partials/section-live.css';
+@import './partials/section-modulos.css';
+@import './partials/section-perguntas.css';
+@import './partials/section-preparar.css';
+@import './partials/section-publico.css';
+@import './partials/section-videos.css';

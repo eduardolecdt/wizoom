@@ -1,0 +1,11 @@
+/* <section class="videos"> */
+
+section.videos {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  
+}

@@ -1,0 +1,11 @@
+/* <section class="apresentacao"> */
+
+section.apresentacao {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  
+}
