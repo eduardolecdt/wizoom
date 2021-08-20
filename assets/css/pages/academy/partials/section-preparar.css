@@ -58,6 +58,7 @@ section.preparar .texto .item h3 {
   text-align: center;
   text-transform: uppercase;
   min-width: 65px;
+  margin: 0 20px 0 0;
 }
 
 section.preparar .texto .item p {
@@ -66,7 +67,26 @@ section.preparar .texto .item p {
   line-height: 2;
   color: var(--cor-cinza-claro-4);
   width: 100%;
-  padding: 0 0 0 20px;
+}
+
+section.preparar .texto .item p span {
+  color: var(--cor-azul);
+  font-family: var(--fonte-medium);
+}
+
+section.preparar .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  margin: 50px 0 0 0;
+}
+
+section.preparar .texto button:hover {
+  opacity: 0.7;
 }
 
 /* Responsivo */

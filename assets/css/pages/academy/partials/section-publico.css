@@ -59,6 +59,10 @@ section.publico .texto p img {
   min-height: 40px;
 }
 
+section.publico a {
+  color: var(--cor-branco);
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {

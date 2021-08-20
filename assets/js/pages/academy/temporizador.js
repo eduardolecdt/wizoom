@@ -73,8 +73,8 @@ class Temporizador {
   temporizador.definirTemporizador('h3[name="dias"]', 'h3[name="horas"]', 'h3[name="minutos"]')
   temporizador2.definirTemporizador('h3[name="dias2"]', 'h3[name="horas2"]', 'h3[name="minutos2"]')
 
-  temporizador.definirDataFinal(2021, 08, 28)
-  temporizador2.definirDataFinal(2021, 08, 28)
+  temporizador.definirDataFinal(2021, 08, 24)
+  temporizador2.definirDataFinal(2021, 08, 24)
 
   temporizador.iniciar()
   temporizador2.iniciar()

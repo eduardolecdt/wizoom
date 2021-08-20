@@ -9,6 +9,10 @@ footer {
   background-color: var(--cor-cinza-escuro-1);  
 }
 
+footer.cor {
+  background-color: var(--cor-cinza-escuro-2);
+}
+
 footer p {
   font-family: var(--fonte-regular);
   font-size: clamp(1rem, 3vw, 1.2rem);
