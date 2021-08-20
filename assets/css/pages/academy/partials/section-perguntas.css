@@ -1,11 +1,80 @@
 /* <section class="perguntas"> */
 
 section.perguntas {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-2);
+  position: relative;
+  padding: 80px;
+}
+
+section.perguntas img.principal {
+  width: 100%;
+  max-width: 40%;
+}
+
+section.perguntas .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  margin-right: auto;
+}
+
+section.perguntas .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  padding: 0 0 30px 0;
+}
+
+section.perguntas .texto h3 {
+  font-family: var(--fonte-medium);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-principal);
+}
+
+section.perguntas .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  padding: 10px 0 50px 0;
+}
+
+section.perguntas .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-principal);
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.perguntas .texto button:hover {
+  opacity: 0.7;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.perguntas {
+    flex-direction: column;
+    padding: 80px 30px;
+  }
+  section.perguntas img.principal {
+    max-width: 80%;
+  }
+  section.perguntas .texto {
+    width: 100%;
+    padding: 0 0 50px 0;
+    margin-right: 9;
+  }
 }

@@ -1,11 +1,89 @@
 /* <section class="preparar"> */
 
 section.preparar {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-1);
+  position: relative;
+  background-image: url('https://static.wizoom.com.br/site/images/academy/background-linhas.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 80px 0 80px;
+}
+
+section.preparar img.principal {
+  width: 100%;
+  max-width: 30%;
+  margin-top: auto;
+}
+
+section.preparar .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 0 80px 80px 0;
+  margin-right: auto;
+}
+
+section.preparar .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 650px;
+}
+
+section.preparar .texto h2 span {
+  color: var(--cor-principal);
+}
+
+section.preparar .texto .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px 0 0 0;
+}
+
+section.preparar .texto .item h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(6rem, 3vw, 10rem);
+  line-height: 1.5;
+  color: var(--cor-azul);
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 65px;
+}
+
+section.preparar .texto .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  width: 100%;
+  padding: 0 0 0 20px;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.preparar {
+    flex-direction: column;
+    padding: 80px 30px 0 30px;
+  }
+  section.preparar img.principal {
+    max-width: 80%;
+  }
+  section.preparar .texto {
+    width: 100%;
+    padding: 0 0 80px 0;
+  }
+  section.preparar .texto .item h3 {
+    min-width: 55px;
+  }
 }

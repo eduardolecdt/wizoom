@@ -1,11 +1,91 @@
 /* <section class="comprar"> */
 
 section.comprar {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-verde);
+  padding: 0 80px 0 80px;
+}
+
+section.comprar img.principal {
+  width: 100%;
+  max-width: 40%;
+  margin-top: auto;
+}
+
+section.comprar .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 0 80px 30px 0;
+  margin-right: auto;
+}
+
+section.comprar .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-cinza-escuro-2);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 420px;
+}
+
+section.comprar .texto h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 370px;
+  padding: 20px 0 40px 0;
+}
+
+section.comprar .texto h3 span {
+  font-size: clamp(2rem, 3vw, 6rem);
+  padding: 0 0 0 10px;
+}
+
+section.comprar .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-cinza-escuro-2);
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.comprar .texto button:hover {
+  opacity: 0.7;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.comprar {
+    flex-direction: column;
+    padding: 50px 30px 0 30px;
+  }
+  section.comprar img.principal {
+    max-width: 80%;
+  }
+  section.comprar .texto {
+    align-items: center;
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  section.comprar .texto h2 {
+    max-width: 300px;
+    text-align: center;
+  }
+  section.comprar .texto h3 {
+    line-height: 1.5;
+    max-width: 270px;
+    text-align: center;
+  }
 }

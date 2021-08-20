@@ -1,11 +1,152 @@
 /* <section class="modulos"> */
 
 section.modulos {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-1);
+  position: relative;
+  background-image: url('https://static.wizoom.com.br/site/images/academy/background-linhas.png');
+  background-size: contain;
+  background-position: top center;
+  padding: 80px 80px 150px 80px;
+}
+
+section.modulos .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+section.modulos .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  padding: 0 0 0 30px;
+  width: 100%;
+  max-width: 700px;
+}
+
+section.modulos .titulo h2 span {
+  color: var(--cor-principal);
+}
+
+section.modulos .titulo img {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+section.modulos .modulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0 0 0;
+}
+
+section.modulos .modulo img {
+  width: 100%;
+  max-width: 50%;
+  border-radius: 20px;
+}
+
+section.modulos .modulo.direita img {
+  margin-left: auto;
+}
+
+section.modulos .modulo.esquerda img {
+  margin-right: auto;
+}
+
+section.modulos .modulo .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.modulos .modulo.direita .texto {
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 0 0 50px;
+}
+
+section.modulos .modulo.esquerda .texto {
+  align-items: flex-end;
+  text-align: right;
+  padding: 0 50px 0 0;
+}
+
+section.modulos .modulo .texto h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-principal);
+  text-transform: uppercase;
+}
+
+section.modulos .modulo .texto h4 {
+  font-family: var(--fonte-medium);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-branco);
+}
+
+section.modulos .modulo .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.modulos {
+    padding: 80px 30px;
+    background-size: 200%;
+  }
+  section.modulos .titulo img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  section.modulos .modulo {
+    flex-direction: column;
+    margin: 80px 0 0 0;
+  }
+  section.modulos .modulo.esquerda {
+    flex-direction: column-reverse;
+  }
+  section.modulos .modulo img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  section.modulos .modulo.direita img {
+    margin-left: 0;
+  }
+  section.modulos .modulo.esquerda img {
+    margin-right: 0;
+  }
+  section.modulos .modulo .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  section.modulos .modulo.direita .texto {
+    padding: 30px 0 0 0;
+  }
+  section.modulos .modulo.esquerda .texto {
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px 0 0 0;
+  }
 }

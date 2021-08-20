@@ -1,11 +1,110 @@
 /* <section class="descobrir"> */
 
 section.descobrir {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-2);
+  padding: 80px 80px 170px 80px;
+  position: relative;
+}
+
+section.descobrir img.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+section.descobrir h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+section.descobrir h2 span {
+  color: var(--cor-principal);
+}
+
+section.descobrir .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+section.descobrir .itens .item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  background-color: var(--cor-cinza-escuro-3);
+  border: 2px solid var(--cor-principal);
+  border-radius: 30px;
+  min-height: 200px;
+}
+
+section.descobrir .itens .item.centro {
+  margin: 0 50px;
+}
+
+section.descobrir .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  text-align: center;
+}
+
+section.descobrir .itens .item img {
+  position: absolute;
+  right: -35px;
+  top: -35px;
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  z-index: 1;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.descobrir {
+    padding: 80px 30px 170px 30px;
+  }
+  section.descobrir .itens {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.descobrir .itens .item {
+    border-radius: 20px;
+    min-height: auto;
+  }
+  section.descobrir .itens .item.centro {
+    margin: 50px 0;
+  }
+  section.descobrir .itens .item img {
+    right: auto;
+    top: auto;
+    left: 20px;
+    bottom: -20px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    transform: rotate(25deg);
+  }
 }

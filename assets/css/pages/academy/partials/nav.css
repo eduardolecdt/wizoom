@@ -1,11 +1,107 @@
 /* <nav> */
 
-nav {
-  display: none;
+nav .base {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 50px 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+nav .base img {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+nav .base button {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: var(--cor-principal);
+  background-color: transparent;
+  margin: 0 0 0 30px;
+  transition: all 0.3s;
+}
+
+nav .base button:hover {
+  opacity: 0.7;
+}
+
+nav .base button.entrar {
+  font-family: var(--fonte-medium);
+  color: var(--cor-branco);
+  margin-left: auto;
+}
+
+nav .base button.assinar {
+  font-family: var(--fonte-medium);
+  color: var(--cor-verde);
+}
+
+nav .fixo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: -70px;
+  left: 0;
+  background-color: var(--cor-cinza-escuro-2);
+  z-index: 10;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+nav.scroll .fixo {
+  top: 0;
+}
+
+nav .fixo button {
+  font-family: var(--fonte-medium);
+  font-size: clamp(0.7rem, 3vw, 0.9rem);
+  color: var(--cor-branco);
+  background-color: transparent;
+  transition: all 0.3s;
+  margin: 0 30px 0 0;
+}
+
+nav .fixo button:hover {
+  opacity: 0.7;
+}
+
+nav .fixo button.entrar {
+  margin-left: auto;
+}
+
+nav .fixo button.assinar {
+  margin: 0 0 0 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  nav .base {
+    padding: 30px 30px;
+  }
+  nav .base button {
+    display: none;
+    margin: 0 20px 0 0;
+  }
+  nav .base button:hover {
+    opacity: 0.7;
+  }
+  nav .base button.entrar {
+    margin-left: auto;
+    display: flex;
+  }
+  nav .base button.assinar {
+    display: flex;
+    margin: 0 0 0 0;
+  }
+  nav .fixo {
+    display: none;
+  }
 }

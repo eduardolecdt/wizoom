@@ -1,11 +1,109 @@
 /* <section class="detalhes"> */
 
 section.detalhes {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-2);
+  padding: 30px 80px 0 80px;
+}
+
+section.detalhes img.principal {
+  width: 100%;
+  max-width: 30%;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+section.detalhes .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 60%;
+  padding: 0 0 80px 50px;
+}
+
+section.detalhes .itens .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+section.detalhes .itens .item img {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+section.detalhes .itens .item h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-principal);
+  text-transform: uppercase;
+  padding: 0 50px 0 0;
+}
+
+section.detalhes .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  padding: 0 50px 0 0;
+}
+
+section.detalhes .itens button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-principal);
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.detalhes .itens button:hover {
+  opacity: 0.7;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.detalhes {
+    flex-direction: column-reverse;
+    padding: 50px 30px 0 30px;
+  }
+  section.detalhes img.principal {
+    max-width: 80%;
+  }
+  section.detalhes .itens {
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  section.detalhes .itens .item {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 0 50px 0;
+  }
+  section.detalhes .itens .item img {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+  section.detalhes .itens .item h3 {
+    padding: 30px 0 0 0;
+  }
+  section.detalhes .itens .item p {
+    padding: 0 0 0 0;
+  }
 }

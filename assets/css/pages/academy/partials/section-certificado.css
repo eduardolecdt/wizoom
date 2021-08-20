@@ -1,11 +1,78 @@
 /* <section class="certificado"> */
 
 section.certificado {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-1);
+  position: relative;
+  background-image: url('https://static.wizoom.com.br/site/images/academy/background-linhas.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 80px 150px 80px;
+}
+
+section.certificado img.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+section.certificado img.principal {
+  width: 100%;
+  max-width: 40%;
+  border-radius: 20px;
+}
+
+section.certificado .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  margin-right: auto;
+  padding: 0 0 0 80px;
+}
+
+section.certificado .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+}
+
+section.certificado .texto h2 span {
+  color: var(--cor-principal);
+}
+
+section.certificado .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  padding: 20px 0 0 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.certificado {
+    flex-direction: column;
+    padding: 80px 30px 100px 30px;
+  }
+  section.certificado img.principal {
+    max-width: 100%;
+  }
+  section.certificado .texto {
+    width: 100%;
+    margin-right: 0;
+    padding: 50px 0 0 0;
+  }
 }

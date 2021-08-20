@@ -1,11 +1,77 @@
 /* <section class="videos"> */
 
 section.videos {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-1);
+  position: relative;
+  background-image: url('https://static.wizoom.com.br/site/images/academy/background-linhas.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 80px 120px 80px;
+}
+
+section.videos h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  padding: 0 0 50px 0;
+}
+
+section.videos h2 span {
+  color: var(--cor-principal);
+}
+
+section.videos .itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.videos .itens .video {
+  border-radius: 20px;
+}
+
+section.videos .itens .video.meio {
+  margin: 0 50px;
+}
+
+section.videos .itens .video iframe {
+  width: 360px;
+  height: 640px;
+  border-radius: 20px;
+  background-color: var(--cor-preto);
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.videos {
+    padding: 80px 30px;
+    background-size: 150%;
+  }
+  section.videos h2 {
+    padding: 0 0 50px 0;
+    text-align: center;
+  }
+  section.videos .itens {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  } 
+  section.videos .itens .video.meio {
+    margin: 50px 0;
+  }
+  section.videos .itens .video iframe {
+    width: 324px;
+    height: 576px;
+  }
 }

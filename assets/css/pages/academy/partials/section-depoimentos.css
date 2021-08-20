@@ -1,11 +1,53 @@
 /* <section class="depoimentos"> */
 
 section.depoimentos {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  padding: 0 80px 80px 80px;
+}
+
+section.depoimentos h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  line-height: 1.5;
+  color: var(--cor-cinza-escuro-2);
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 0 50px 0;
+}
+
+section.depoimentos h2 span {
+  color: var(--cor-verde);
+}
+
+section.depoimentos .imagens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section.depoimentos .imagens img {
+  width: 25%;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  section.depoimentos {
+    padding: 50px 30px 50px 30px;
+  }
+  section.depoimentos h2 {
+    padding: 0 0 0 0;
+  }
+  section.depoimentos .imagens img {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
 }

@@ -1,11 +1,34 @@
 /* <footer> */
 
 footer {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+  width: 100%;
+  background-color: var(--cor-cinza-escuro-1);  
+}
+
+footer p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 2;
+  color: var(--cor-cinza-claro-4);
+  padding: 0 0 0 20px;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  
+  footer p {
+    width: 100%;
+    max-width: 250px;
+  }
 }
