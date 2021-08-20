@@ -4,23 +4,21 @@ class Temporizador {
     this.seletoresTemporizador = {
       dia: null,
       hora: null,
-      minuto: null,
-      segundo: null
+      minuto: null
     }
   }
 
   // Inicializacao
 
-  definirTemporizador (dia, hora, minuto, segundo) {
+  definirTemporizador (dia, hora, minuto) {
     this.seletoresTemporizador.dia = dia
     this.seletoresTemporizador.hora = hora
     this.seletoresTemporizador.minuto = minuto
-    this.seletoresTemporizador.segundo = segundo
   }
 
-  definirDataFinal (ano, mes, dia, hora = 0, minuto = 0, segundo = 0) {
+  definirDataFinal (ano, mes, dia, hora = 0, minuto = 0) {
     mes -= 1
-    this.dataFinal = new Date(ano, mes, dia, hora, minuto, segundo)
+    this.dataFinal = new Date(ano, mes, dia, hora, minuto)
   }
 
   // Sistema
@@ -32,7 +30,7 @@ class Temporizador {
       const tempoRestante = this._calcularTempoRestante(dataLimite, agora)
 
       if (tempoRestante === 0) {
-        const tempoFinalizado = { dias: 0, horas: 0, minutos: 0, segundos: 0 }
+        const tempoFinalizado = { dias: 0, horas: 0, minutos: 0 }
         this._renderizar(tempoFinalizado)
         clearInterval(intervalo)
         return
@@ -46,7 +44,6 @@ class Temporizador {
     document.querySelector(this.seletoresTemporizador.dia).innerText = tempoRestante.dias
     document.querySelector(this.seletoresTemporizador.hora).innerText = tempoRestante.horas
     document.querySelector(this.seletoresTemporizador.minuto).innerText = tempoRestante.minutos
-    document.querySelector(this.seletoresTemporizador.segundo).innerText = tempoRestante.segundos
   }
 
   // Operacoes com Data
@@ -62,9 +59,8 @@ class Temporizador {
     const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24))
     const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60))
-    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000)
 
-    return { dias, horas, minutos, segundos }
+    return { dias, horas, minutos }
   }
 }
 
@@ -74,8 +70,8 @@ class Temporizador {
   const temporizador = new Temporizador()
   const temporizador2 = new Temporizador()
 
-  temporizador.definirTemporizador('h3[name="dias"]', 'h3[name="horas"]', 'h3[name="minutos"]', 'h3[name="segundos"]')
-  temporizador2.definirTemporizador('h3[name="dias2"]', 'h3[name="horas2"]', 'h3[name="minutos2"]', 'h3[name="segundos2"]')
+  temporizador.definirTemporizador('h3[name="dias"]', 'h3[name="horas"]', 'h3[name="minutos"]')
+  temporizador2.definirTemporizador('h3[name="dias2"]', 'h3[name="horas2"]', 'h3[name="minutos2"]')
 
   temporizador.definirDataFinal(2021, 08, 28)
   temporizador2.definirDataFinal(2021, 08, 28)
