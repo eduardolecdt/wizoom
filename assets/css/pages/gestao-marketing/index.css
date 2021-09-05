@@ -1,0 +1,22 @@
+/* site.wizoom.com.br/academy */
+
+@import './partials/fonts.css';
+@import './partials/normalize.css';
+@import './partials/scrollbar.css';
+@import './partials/variables.css';
+
+@import './partials/nav.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-frase.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-pilares.css';
+@import './partials/section-mapa.css';
+@import './partials/section-autor.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-bonus.css';
+@import './partials/section-suporte.css';
+@import './partials/section-comprar.css';
+@import './partials/section-garantia.css';
+@import './partials/section-chance.css';
+@import './partials/section-perguntas.css';
+@import './partials/footer.css';

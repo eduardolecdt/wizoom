@@ -1,0 +1,101 @@
+/* <section class="depoimentos"> */
+
+section.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza-1);
+  background-image: url('https://static.wizoom.com.br/site/images/gestao-marketing/background-1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+section.depoimentos h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.depoimentos h2 span {
+  color: var(--cor-azul);
+}
+
+section.depoimentos .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+section.depoimentos .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+section.depoimentos .itens .item .titulo {
+  display: flex;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+section.depoimentos .itens .item .titulo img {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+}
+
+section.depoimentos .itens .item .titulo .nome {
+  padding: 0 0 0 15px;
+}
+
+section.depoimentos .itens .item .titulo h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: var(--cor-amarelo);
+}
+
+section.depoimentos .itens .item .titulo h4 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+}
+
+section.depoimentos .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--cor-cinza-2);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.depoimentos {
+    align-items: flex-start;
+    padding: 80px 30px;
+  }
+  section.depoimentos h2 {
+    width: 100%;
+    max-width: 300px;
+  }
+  section.depoimentos .itens {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+  }
+  section.depoimentos .itens .item {
+    padding: 20px 0;
+  }
+}

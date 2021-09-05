@@ -1,0 +1,86 @@
+/* <section class="pilares"> */
+
+section.pilares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--cor-cinza-2);
+  background-image: url('https://static.wizoom.com.br/site/images/gestao-marketing/background-2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+section.pilares img.detalhe {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+section.pilares img.principal.desktop {
+  width: 100%;
+  max-width: 50%;
+  z-index: 2;
+}
+
+section.pilares img.principal.mobile {
+  width: 100%;
+  display: none;
+  z-index: 2;
+}
+
+section.pilares .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 40%;
+  z-index: 2;
+  margin-right: auto;
+}
+
+section.pilares .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.pilares .titulo h2 span {
+  color: var(--cor-amarelo);
+}
+
+section.pilares .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.pilares {
+    flex-direction: column-reverse;
+    padding: 80px 30px;
+  }
+  section.pilares img.detalhe {
+    height: auto;
+    width: 100%;
+  }
+  section.pilares img.principal.desktop {
+    display: none;
+  }
+  section.pilares img.principal.mobile {
+    width: 100%;
+    display: flex;
+  }
+  section.pilares .titulo {
+    max-width: 100%;
+    padding: 50px 0 0 0;
+  }
+}

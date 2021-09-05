@@ -1,0 +1,119 @@
+/* <section class="conteudo"> */
+
+section.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px;
+  background-color: var(--cor-cinza-1);
+}
+
+section.conteudo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 750px;
+  z-index: 2;
+}
+
+section.conteudo h2 span {
+  color: var(--cor-amarelo);
+}
+
+section.conteudo .modulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  border: 10px solid var(--cor-cinza-2);
+  padding: 50px;
+  margin: 70px 0 0 0;
+  position: relative;
+}
+
+section.conteudo .modulo img.detalhe.cima {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  width: 100%;
+  max-width: 30%;
+}
+
+section.conteudo .modulo img.detalhe.baixo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 30%;
+}
+
+section.conteudo .modulo p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 10px 0 50px 0;
+  z-index: 2;
+}
+
+section.conteudo .modulo .itens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+section.conteudo .modulo .itens .item {
+  padding: 0 50px 50px 0;
+  width: 100%;
+  max-width: 33%;
+}
+
+section.conteudo .modulo .itens .item h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--cor-azul);
+}
+
+section.conteudo .modulo .itens .item h4 {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--cor-branco);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.conteudo {
+    padding: 80px 30px;
+  }
+  section.conteudo .modulo {
+    padding: 30px;
+    margin: 50px 0 0 0;
+    border: 5px solid var(--cor-cinza-2);
+  }
+  section.conteudo .modulo p {
+    padding: 10px 0 0 0;
+  }
+  section.conteudo .modulo img.detalhe.cima {
+    max-width: 80%;
+  }
+  section.conteudo .modulo img.detalhe.baixo {
+    max-width: 80%;
+  }
+  section.conteudo .modulo .itens {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  section.conteudo .modulo .itens .item {
+    padding: 30px 0 0 0;
+    max-width: 100%;
+  }
+}

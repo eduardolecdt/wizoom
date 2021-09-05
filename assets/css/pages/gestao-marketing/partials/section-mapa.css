@@ -1,0 +1,78 @@
+/* <section class="mapa"> */
+
+section.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza-1);
+  background-image: url('https://static.wizoom.com.br/site/images/gestao-marketing/background-1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+section.mapa h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+section.mapa h2 span {
+  color: var(--cor-azul);
+}
+
+section.mapa .itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0 0 0;
+}
+
+section.mapa .itens .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 30%;
+  padding: 30px;
+}
+
+section.mapa .itens .item img {
+  width: 100%;
+  max-width: 150px;
+}
+
+section.mapa .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 0 0 0 15px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.mapa {
+    padding: 80px 30px;
+  }
+  section.mapa .itens {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  section.mapa .itens .item {
+    max-width: 100%;
+    padding: 50px 0 0 0;
+  }
+  section.mapa .itens .item img {
+    width: 100%;
+    max-width: 80px;
+  }
+}

@@ -1,0 +1,121 @@
+/* <section class="comprar"> */
+
+section.comprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+  border: 15px solid var(--cor-verde);
+  background-color: var(--cor-branco);
+  position: relative;
+}
+
+section.comprar img.detalhe.cima {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  width: 100%;
+  max-width: 20%;
+}
+
+section.comprar img.detalhe.baixo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 20%;
+}
+
+section.comprar .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.comprar .titulo h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-cinza-2);
+  line-height: 1.5;
+}
+
+section.comprar .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(4rem, 3vw, 6rem);
+  color: var(--cor-verde);
+  line-height: 1.5;
+}
+
+section.comprar .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-cinza-2);
+  line-height: 1.7;
+  padding: 0 0 30px 0;
+}
+
+section.comprar .titulo button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde);
+  padding: 20px 35px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  animation: pulsando 1s linear infinite
+}
+
+section.comprar .titulo button:hover {
+  background-color: var(--cor-azul);
+  box-shadow: 0 0 40px 0 var(--cor-azul);
+  animation: none;
+}
+
+section.comprar .titulo img {
+  width: 100%;
+  max-width: 400px;
+  margin: 30px 0 0 0;
+}
+
+@keyframes pulsando {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--cor-verde);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px 0 var(--cor-verde);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--cor-verde);
+  }
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.comprar {
+    padding: 150px 40px;
+    border: 10px solid var(--cor-verde);
+  }
+  section.comprar img.detalhe.cima {
+    max-width: 50%;
+  }
+  section.comprar img.detalhe.baixo {
+    max-width: 50%;
+  }
+  section.comprar .titulo h3 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+  section.comprar .titulo h2 {
+    font-size: clamp(2rem, 3vw, 4rem);
+  }
+  section.comprar .titulo img {
+    max-width: 250px;
+  }
+}

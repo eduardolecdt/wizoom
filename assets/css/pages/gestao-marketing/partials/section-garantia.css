@@ -1,0 +1,64 @@
+/* <section class="garantia"> */
+
+section.garantia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--cor-cinza-2);
+  background-image: url('https://static.wizoom.com.br/site/images/gestao-marketing/background-2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+section.garantia img.principal {
+  width: 100%;
+  max-width: 30%;
+}
+
+section.garantia .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 55%;
+  padding: 0 0 0 50px;
+}
+
+section.garantia .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 0 0 20px 0;
+}
+
+section.garantia .titulo h2 span {
+  color: var(--cor-azul);
+}
+
+section.garantia .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.garantia {
+    flex-direction: column;
+    padding: 80px 30px;
+  }
+  section.garantia img.principal {
+    max-width: 100%;
+  }
+  section.garantia .titulo {
+    max-width: 100%;
+    padding: 40px 0 0 0;
+  }
+}
