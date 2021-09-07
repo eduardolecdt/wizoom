@@ -1,0 +1,11 @@
+/* site.wizoom.com.br/academy */
+
+@import './partials/fonts.css';
+@import './partials/normalize.css';
+@import './partials/scrollbar.css';
+@import './partials/variables.css';
+
+@import './partials/section-apresentacao.css';
+@import './partials/section-mapa.css';
+@import './partials/section-autor.css';
+@import './partials/footer.css';

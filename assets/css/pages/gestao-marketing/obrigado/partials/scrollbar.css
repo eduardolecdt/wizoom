@@ -1,0 +1,19 @@
+/* Scrollbar */
+
+body, html {
+  scrollbar-color: #2FC83E #121A1C;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121A1C;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2FC83E;
+}
